@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome To Korea</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script>
+        function video(mvi) {
+            document.getElementById("ifr").src =
+                "https://www.youtube.com/embed/" + mvi + "?autoplay=1&loop=1&end=84&playlist=" + mvi;
+        }
+
+    </script>
+
+
+</head>
+
+<body>
+
+    <!--1. 배경비디오 넣기-->
+
+
+
+    <video id="bg" src="images/korea2.mp4" autoplay muted loop></video>
+    <div class="all">
+        <header class="logobox part">
+             <!--상단로고-->
+            <a href="https://kto.visitkorea.or.kr/kor.kto" target="_blank">
+                <img class="logo" src="images/logo1.png" alt="로고">
+                <span class="logotxt">
+                    KOREA <br>
+                    TOURISM <br>
+                    ORGANZATION <br>
+                    한국관광공사 <br>
+                </span>
+            </a>
+            <p class="title">Welcome To<span class="kor"> KOREA</span></p>
+        </header>
+        <!--컨턴츠 박스-->
+        <main class="contbox part">
+            <!--스크린 박스-->
+            <div class="screen">
+                <iframe id="ifr" src="https://www.youtube.com/embed/pT3n3n_DRH4?autoplay=1" allow="autoplay">
+                </iframe>
+            </div>
+
+            <!--지역 홍보 영상-->
+            <div class="menu">
+                <ul>
+                    <li onclick="video('3P1CnWI62Ik')">
+                        <img src="images/seoul.png" alt="서울">
+                        <!--지역정보-->
+                        <ol class="text">
+                            <li>KOREA</li>
+                            <li>서울</li>
+                            <li>Seoul</li>
+                        </ol>
+                    </li>
+                    <li onclick="video('dQ_lCmB2hfk')">
+                        <img src="images/jeon.png" alt="전주">
+                        <!--지역정보-->
+                        <ol class="text">
+                            <li>KOREA</li>
+                            <li>전주</li>
+                            <li>Jeonju</li>
+                        </ol>
+                    </li>
+                    <li onclick="video('xLD8oWRmlAE')">
+                        <img src="images/busan.png" alt="부산">
+                        <!--지역정보-->
+                        <ol class="text">
+                            <li>KOREA</li>
+                            <li>부산</li>
+                            <li>Busan</li>
+                        </ol>
+                    </li>
+                    <li onclick="video('RdzvyvGcOYQ')">
+                        <img src="images/gang.png" alt="강릉">
+                        <!--지역정보-->
+                        <ol class="text">
+                            <li>KOREA</li>
+                            <li>강릉</li>
+                            <li>Gangneung</li>
+                        </ol>
+                    </li>
+                    <li onclick="video('CitIMlaa8To')">
+                        <img src="images/mokpo.png" alt="목포">
+                        <!--지역정보-->
+                        <ol class="text">
+                            <li>KOREA</li>
+                            <li>목포</li>
+                            <li>Mokpo</li>
+                        </ol>
+                    </li>
+                    <li onclick="video('R2GeUF_xm1Y')">
+                        <img src="images/andong.png" alt="안동">
+                        <!--지역정보-->
+                        <ol class="text">
+                            <li>KOREA</li>
+                            <li>안동</li>
+                            <li>Andong</li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <footer class="foot part">
+            <!--5.회사정보-->
+            <address>
+                <a href="https://kto.visitkorea.or.kr/kor.kto" target="_blank">
+                <img src="images/logo6.png" alt="하단로고">
+                </a>
+                <p>
+                    26464 강원도 원주시 세계로 10 TEL : (033)738-3000 사업자등록번호 : 202-81-50707 <br>
+                    통신판매업신고 : 제 2009-서울중구-1234호 <br>
+                    Copyright © KTO. ALL RIGHT RESERVED.
+                </p>
+            </address>
+            <ul class="sns">
+                <li>
+                    <a href="https://twitter.com/kor_visitkorea" target="_blank">
+                        <span class="bld">트위터</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/kto9suk9suk/" target="_blank">
+                        <span class="bld">인스타그램</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/9suk9suklive" target="_blank">
+                        <span class="bld">페이스북</span>
+                    </a>
+                </li>
+            </ul>
+
+        </footer>
+
+    </div>
+
+
+
+</body>
+
+</html>

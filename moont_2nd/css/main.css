@@ -1,0 +1,292 @@
+@charset "utf-8";
+
+@import url(core.css);
+@import url(reset.css);
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    /*보이는 화면기준*/
+}
+
+/*바디 부모주기*/
+body {
+    position: relative;
+}
+
+/*body의 가상요소로 비디오 커버 만들기 - 오버레이효과*/
+/*body::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .5;
+}*/
+
+
+
+/*비디오*/
+#bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+/*전체박스 크기 위치 설정*/
+.all {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    /* outline: 3px dashed lime;*/
+
+
+}
+
+/*로고박스 설정*/
+.logobox {
+    position: relative;
+    width: 1200px;
+    height: 120px;
+  /*   outline: 2px solid blue;*/
+    margin: 0 auto;
+    text-shadow: 1px 1px 1px #121212;
+
+
+}
+
+/*컨텐츠박스 설정*/
+.contbox {
+    position: relative;
+    width: 1200px;
+    height: 704px;
+  /*  outline: 2px solid red;*/
+    margin: 0 auto;
+}
+
+/*하단박스*/
+.foot {
+    position: relative;
+    width: 1200px;
+    height: 112px;
+   /*  outline: 2px solid black;*/
+    margin: 0 auto;
+
+}
+
+/*로고 위치*/
+.logo {
+    position: absolute;
+    top: 22px;
+    left: 240px;
+    float: left;
+}
+
+.logotxt {
+    position: absolute;
+    top: 48px;
+    left: 319px;
+    font-size: 12px;
+    color: #dedddd
+}
+
+/*웰컴 코리아 위치 글씨 설정*/
+.title {
+    position: absolute;
+    top: 40px;
+    margin-left: 406px;
+    font: bold 60PX Nanum;
+    color: #8d2424;
+}
+
+/*코리아 색 설정*/
+.kor {
+    color: #242c8d;
+}
+
+/*3. 스크린박스*/
+.screen {
+    position: absolute;
+    top: 17px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 900px;
+    height: 506px;
+    background-color: #000;
+}
+
+/*스크린박스에 채우기*/
+.screen iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/*우리나라 소개메뉴*/
+.menu {
+    position: absolute;
+    bottom: 6px;
+    left: 150px;
+    /* left: 50%;
+    transform: translateX(-50%);*/
+    overflow: hidden;
+}
+
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.menu ul > li {
+    float: left;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+/*각 지역 포스터 이미지 크기지정*/
+.menu img {
+    width: 140px;
+    height: 140px;
+}
+
+/*이미지 정보박스*/
+.text {
+    position: absolute;
+    top: 100%;
+    width: 140px;
+    height: 140px;
+    text-align: center;
+    font: 25px/35px 'Nanum';
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: top .4s ease-out;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #121212;
+}
+
+.menu > ul > li:hover .text {
+    top: 0;
+}
+
+.text li:first-child {
+    margin-top: 20px;
+    color: #8d2424;
+
+
+}
+
+.text li:nth-child(2) {
+
+    color: #242c8d;
+}
+
+.text li:last-child {
+
+    color: #c6c6c6;
+}
+
+/*회사정보박스*/
+.foot address {
+    font-style: normal;
+    font-size: 13px;
+    line-height: 20px;
+
+    padding-left: 255px;
+    color: #c6c6c6;
+    text-shadow: 1px 1px 1px #121212;
+}
+
+/*하단로고이미지*/
+.foot address img {
+    float: left;
+    margin-right: 26px;
+    padding-top: 5px;
+}
+
+.foot address p {
+    padding-top: 10px;
+
+
+}
+
+/*1-3. sns메뉴*/
+.sns {
+    position: absolute;
+    top: 8px;
+    right: 255px;
+
+}
+
+/*sns메뉴 li*/
+.sns li {
+    width: 30px;
+    height: 30px;
+    background: url(../images/icons.png) no-repeat;
+    float: left;
+
+
+}
+
+/*sns 로고이미지 넣기*/
+.sns li:first-child {
+    /*트위터*/
+    background-position: 0 0;
+
+}
+
+.sns li:first-child:hover {
+    /*트위터 오버시*/
+    background-position: 0 -30px;
+}
+
+.sns li:nth-child(2) {
+    /*인스타그램*/
+    background-position: -30px 0;
+}
+
+.sns li:nth-child(2):hover {
+    /*인스타그램 오버시*/
+    background-position: -30px -30px;
+}
+
+.sns li:last-child {
+    /*페이스북*/
+    background-position: -60px 0;
+}
+
+.sns li:last-child:hover {
+    /*페이스북 오버시*/
+    background-position: -60px -30px;
+}
+
+/*링크확장*/
+.sms a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/*로고 글씨 안보이게*/
+.bld {
+    opacity: 0;
+}
