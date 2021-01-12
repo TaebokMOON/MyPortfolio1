@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>UI 캐릭터 소개</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            background: url(images/field.jpg) no-repeat fixed center /cover;
+
+        }
+
+        /*타이틀*/
+        #doosan {
+            /*화면고정*/
+            position: fixed;
+            width: 100%;
+            top: 838px;
+
+            /*마진 패딩 없앰*/
+            margin: 0;
+            padding: 0;
+
+
+            /*글자 중앙*/
+            text-align: center;
+            background-color: #081029;
+            color: #fff;
+        }
+
+        /*가운데 컨텐츠 전체박스*/
+        #cont1 {
+            position: relative;
+            /*부모자격*/
+            width: 1000px;
+            height: 800px;
+
+            margin: 0px auto;
+           
+            /* outline: 2px solid #010103;*/
+            background: url(images/fd.png) no-repeat fixed center 0/860px;
+
+        }
+
+        /*첫번재 작은박스*/
+        .box1 {
+            height: 110px;
+            /*outline: 2px solid #8e3636;*/
+            margin: 0 auto;
+            transition: .4s ease-in-out;
+
+        }
+
+
+        /*두번째 백그라운드*/
+        .box2 {
+
+            height: 110px;
+            /*outline: 2px solid #8e3636;*/
+            margin: 0 auto;
+            margin-top: 22px;
+            transition: .4s ease-in-out;
+
+        }
+
+        /*작은박스 */
+        .ss {
+
+            width: 170px;
+            height: 110px;
+            background-color: #081029;
+
+        }
+
+        /*정수빈 박스*/
+        .jsb {
+
+            margin-left: 412px;
+
+
+
+
+
+        }
+
+        /*김재환 박스*/
+        .kjh32 {
+            float: left;
+
+        }
+
+        /*박건우 박스*/
+        .pkw {
+            float: right;
+
+        }
+
+        /*김재호 박스*/
+        .kjh {
+            float: left;
+
+            margin-left: 240px;
+        }
+
+        /*오재원 박스*/
+        .ojo {
+            float: right;
+
+            margin-right: 240px;
+        }
+
+        /*허경민 박스*/
+        .hkm {
+            float: left;
+
+            margin-left: 70px;
+        }
+
+        /*오재일 박스*/
+        .oj1 {
+            float: right;
+
+            margin-right: 70px;
+        }
+
+        .ss:hover .sbox {
+
+            transform: rotateX(360deg);
+            transition: transform .4s ease-in-out;
+            font-weight: 800;
+        }
+
+        .sbox::after {
+            content: "";
+            display: block;
+            /*block이어야 clear사용가능*/
+            clear: both;
+            /*float해제*/
+        }
+
+        /*작은 박스 마우스 오버*/
+        .sbox:hover {
+            background-color: #fff;
+            width: 170px;
+            height: 110px;
+        }
+
+        /*.ss:hover {
+            background-color: #fff;
+            width: 170px;
+            height: 110px;
+        }*/
+
+        /*작은박스 마우스 오버*/
+        .ss:hover .po {
+            background-color: #fff no-repeat fixed center /cover;
+            color: #081029;
+        }
+
+        /*큰박스 마우스 오버시*/
+        .ss:hover .big {
+            display: block;
+            opacity: 1;
+            transform: rotateY(360deg);
+            font-weight: 600;
+        }
+
+        .ss:hover {
+            background-color: rgba(8, 16, 41, 0);
+
+
+        }
+
+
+        /*각각이미지 박스*/
+        /*이미지 박스 마진 위치 설정*/
+        .imgbox {
+            margin-top: 5px;
+            margin-left: 5px;
+            float: left;
+
+        }
+
+        /*작은박스 넘버 설정*/
+        .no {
+            color: #fff;
+            font-size: 36px;
+            margin-left: 8px;
+
+
+        }
+
+        /*작은박스 이름 글자 설정*/
+        .name {
+            color: #fff;
+            font-size: 18px;
+            margin-left: 8px;
+        }
+
+        /* 작은박스 포지션 글자 설정*/
+        .pos {
+            color: #fff;
+            font-size: 12px;
+            margin-left: 8px;
+        }
+
+
+
+
+        /*큰박스*/
+        .big {
+
+
+            position: absolute;
+            bottom: 10px;
+            left: 37%;
+            /*부모? .cont*/
+            /*transform: translateX(-50%);*/
+            width: 270px;
+            height: 350px;
+            background-color: #fff;
+            /*outline: 2px solid red;*/
+            margin: 0 auto;
+            margin-top: -80px;
+
+            opacity: 0;
+            transition: .4s ease-in-out;
+
+
+        }
+
+        /*큰 이미지 */
+        .bigimg {
+            margin-top: 10px;
+            margin-left: 10px;
+            /*outline: 2px solid #081029;*/
+            float: left;
+        }
+
+        /*큰 넘버 이름 포지션*/
+        .btit {
+
+            margin-top: 5px color: #081029;
+            margin-left: 10px;
+            color: #081029;
+        }
+
+        /*큰박스 넘버 설정*/
+        .bno {
+
+            font-size: 55px;
+            margin-top: 20px;
+            margin-left: 10px;
+
+
+        }
+
+        /*큰박스 이름 글자 설정*/
+        .bname {
+
+            font-size: 30px;
+            margin-left: 10px;
+        }
+
+        /*큰박스 포지션 글자 설정*/
+        .bpos {
+
+            font-size: 20px;
+            margin-left: 10px;
+        }
+
+        .blind {
+            position: absolute;
+            bottom: 5px;
+            left: 50%;
+            /*부모? .cont*/
+            transform: translateX(-50%);
+            width: 300px;
+            height: 360px;
+            /*outline: 2px solid red;*/
+            z-index: 10;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--타이틀-->
+    <h1 id="doosan">두산 베어스 수비 라인업</h1>
+    <div id="cont1" class="clb">
+        <div class="box1">
+            <div class="jsb ss">
+                <div class="sbox">
+                    <img class="imgbox" src="images/jsb_.png" alt="정수빈">
+
+
+
+                    <span class="no po">31</span> <br> <span class="name po">정수빈</span>
+                    <span class="pos po">중견수</span>
+                </div>
+
+                <div class="big aa">
+
+                    <img class="bigimg" src="images/jsb_1.png" alt="정수빈">
+                    <div class="btit">
+                        <span class="bno">31</span> <br> <span class="bname">정수빈</span> <br>
+                        <span class="bpos">중견수</span>
+                        <br><br><br>
+
+                        선수명 : 정수빈 <br>
+                        등번호 : 31 <br>
+                        생년월일 : 1990-10-07 <br>
+                        포지션 : 외야수 <br>
+                        신장/체중 : 175cm / 70kg <br>
+                        경력 : 신곡초-수원북중-유신고 <br>
+                        입단년도 : 2009
+
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+        <div class="box2">
+            <div class="kjh32 ss">
+                <div class="sbox">
+                    <img class="imgbox" src="images/kjh32_.png" alt="김재환">
+
+                    <span class="no po">32</span> <br> <span class="name po">김재환</span>
+                    <span class="pos po">죄익수</span>
+                </div>
+
+                <div class="big aa">
+
+                    <img class="bigimg" src="images/kjh32_1.png" alt="김재환">
+                    <div class="btit">
+                        <span class="bno">31</span> <br> <span class="bname">김재환</span> <br>
+                        <span class="bpos">좌익수</span>
+                        <br><br><br>
+
+                        선수명 : 김재환 <br>
+                        등번호 : 32 <br>
+                        생년월일 : 1988-09-22 <br>
+                        포지션 : 외야수 <br>
+                        신장/체중 : 183cm / 90kg <br>
+                        경력 : 영랑초-상인천중-인천고 <br>
+                        입단년도 : 2008 <br>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+            <div class="pkw ss">
+                <div class="sbox">
+                    <img class="imgbox" src="images/pkw_.png" alt="박건우">
+
+                    <span class="no po">37</span> <br> <span class="name po">박건우</span>
+                    <span class="pos po">우익수</span>
+                </div>
+                <div class="big aa">
+
+                    <img class="bigimg" src="images/pkw_1.png" alt="박건우">
+                    <div class="btit">
+                        <span class="bno">37</span> <br> <span class="bname">박건우</span> <br>
+                        <span class="bpos">우익수</span>
+                        <br><br><br>
+
+                        선수명 : 박건우 <br>
+                        등번호 : 37 <br>
+                        생년월일 : 1990-09-08 <br>
+                        포지션 : 외야수 <br>
+                        신장/체중 : 184cm / 79kg <br>
+                        경력 : 역삼초-이수중-서울고 <br>
+                        입단년도 : 2009 <br>
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="box2">
+            <div class="kjh ss">
+                <div class="sbox">
+                    <img class="imgbox" src="images/kjh_.png" alt="김재호">
+
+                    <span class="no po">52</span> <br> <span class="name po">김재호</span>
+                    <span class="pos po">유격수</span>
+                </div>
+                <div class="big aa">
+
+                    <img class="bigimg" src="images/kjh_1.png" alt="김재호">
+                    <div class="btit">
+                        <span class="bno">52</span> <br> <span class="bname">김재호</span> <br>
+                        <span class="bpos">유격수</span>
+                        <br><br><br>
+
+                        선수명 : 김재호 <br>
+                        등번호 : 52 <br>
+                        생년월일 : 1985-03-21 <br>
+                        포지션 : 내야수 <br>
+                        신장/체중 : 181cm / 76kg <br>
+                        경력 : 남정초-중앙중-중앙고 <br>
+                        입단년도 : 2004 <br>
+
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+            <div class="ojo ss">
+                <div class="sbox">
+                    <img class="imgbox" src="images/ojo_.png" alt="오재원">
+
+
+                    <span class="no po">24</span> <br> <span class="name po">오재원</span><br>
+                    <span class="pos po">2루수</span>
+                </div>
+                <div class="big aa">
+
+                    <img class="bigimg" src="images/ojo_1.png" alt="오재원">
+                    <div class="btit">
+                        <span class="bno">24</span> <br> <span class="bname">오재원</span> <br>
+                        <span class="bpos">2루수</span>
+                        <br><br><br>
+
+                        선수명 : 오재원 <br>
+                        등번호 : 24 <br>
+                        생년월일 : 1985-02-09 <br>
+                        포지션 : 내야수 <br>
+                        신장/체중 : 185cm / 80kg <br>
+                        경력 : 학동초-경원중-야탑고-경희대 <br>
+                        입단년도 : 2007 <br>
+
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+        <div class="box2">
+            <div class="hkm ss">
+                <div class="sbox">
+                    <img class="imgbox" src="images/hkm_.png" alt="허경민">
+
+                    <span class="no po">13</span> <br> <span class="name po">허경민</span><br>
+                    <span class="pos po">3루수</span>
+                </div>
+                <div class="big aa">
+
+                    <img class="bigimg" src="images/hkm_1.png" alt="허경민">
+                    <div class="btit">
+                        <span class="bno">13</span> <br> <span class="bname">허경민</span> <br>
+                        <span class="bpos">3루수</span>
+                        <br><br><br>
+
+                        선수명 : 허경민 <br>
+                        등번호 : 13 <br>
+                        생년월일 : 1990-08-26 <br>
+                        포지션 : 내야수 <br>
+                        신장/체중 : 178cm / 84kg <br>
+                        경력 : 송정동초-충장중-광주제일고 <br>
+                        입단년도 : 2009 <br>
+
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+            <div class="oj1 ss">
+                <div class="sbox">
+                    <img class="imgbox" src="images/oh1_.png" alt="오재일">
+
+                    <span class="no po">32</span> <br> <span class="name po">오재일</span><br>
+                    <span class="pos po">1루수</span>
+                </div>
+                <div class="big aa">
+
+                    <img class="bigimg" src="images/oh1_1.png" alt="오재일">
+                    <div class="btit">
+                        <span class="bno">32</span> <br> <span class="bname">오재일</span> <br>
+                        <span class="bpos">1루수</span>
+                        <br><br><br>
+
+                        선수명 오재일 <br>
+                        등번호 36 <br>
+                        생년월일 1986-10-29 <br>
+                        포지션 내야수 <br>
+                        신장/체중 188cm / 95kg <br>
+                        경력 인창초-인창중-야탑고 <br>
+                        입단년도 2005 <br>
+
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+            <div class="blind">
+
+            </div>
+            <div class="logo">
+                
+            </div>
+        </div>
+
+
+    </div>
+    <!-- <div class="blind">
+
+    </div>-->
+
+
+
+
+
+</body>
+
+</html>
