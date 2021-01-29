@@ -1,0 +1,1647 @@
+@charset "utf-8";
+/* 메인 CSS - main.css*/
+
+/*외부 CSS파일 합치기*/
+@import url(gridSet.css);
+@import url(gridView.css);
+@import url(reset.css);
+@import url(core.css);
+@import url(common.css);
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    /*한페이지를 채우는 *page를 위해 높이값 100%보이는 화면 기준을 꼮해야함*/
+}
+
+/*백그라운드 이미지 */
+body {
+    overflow-x: hidden;
+    /*사이트 디자인이미지 배경넣기*/
+    /*background: url(../images/bg6.png) no-repeat center top;*/
+}
+
+/* 뒤에 배경*/
+/*body {
+     background: url(../images/201912021575251937_pc.gif) no-repeat center 34%;
+     z-index: -1
+}*/
+
+/**:focus {
+    outline: none;
+}*/
+
+/*그리드 아래로 */
+.grid {
+    z-index: -1
+}
+
+/*각 영역별 파티션 높이값 설정하기*/
+
+
+/*1. 상단 로고*/
+.t1 {
+    height: 70px;
+}
+
+.top {
+    border-bottom: 1px solid #ccc;
+}
+
+/*로고*/
+#logo {
+    position: relative;
+    top: 52%;
+    left: 0;
+    transform: translateY(-50%)
+}
+
+/*이미지 반으로 바꾸기*/
+#logo img {
+    max-width: 50%;
+
+}
+
+/*상단에 로그인 회원가입 한글*/
+.lang {
+    position: absolute;
+    bottom: 28px;
+    left: 64px;
+
+
+}
+
+/*상단 메뉴 글씨 설정*/
+.lang a {
+
+    font-size: 0.875rem;
+    font-family: 'malgun';
+    letter-spacing: -3px;
+    color: #444;
+}
+
+/*상단메뉴 | 설정*/
+.lang .pppp {
+    color: #e0e0e1;
+}
+
+/*첫번째 li만 빼고 li에 왼쪽마진주기*/
+.lang li + li {
+    margin-left: 19px;
+}
+
+/*상단 로고*/
+.tlang {
+    color: #e8e8e8;
+}
+
+/*클릭하면 화면 바뀜*/
+.langbtn {
+    position: absolute;
+    top: 33%;
+    right: 1%;
+    border: 0;
+    outline: 0;
+}
+
+.langbtn2 {
+    position: absolute;
+    top: 44%;
+    right: 1%;
+    display: none;
+}
+
+.langbtn.on .langbtn2 {
+    display: block;
+}
+
+
+
+.langbox {
+    position: absolute;
+    top: 67%;
+    right: 0;
+    width: 81px;
+    height: 90px;
+    /* outline: 1px solid red;*/
+    background-color: #273346;
+    z-index: 3;
+    display: none;
+}
+
+.langbox li {
+    font-size: 0.875rem;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 16px;
+    margin-top: 5px;
+}
+
+.langbox li a {
+    color: #fff;
+
+}
+
+.langbox li + li {
+    margin-top: 3px;
+}
+
+
+
+
+/*2. 메뉴바*/
+.n1 {
+    height: 66px;
+}
+
+.nav {
+    border-bottom: 2px solid #484848;
+}
+
+/*메뉴*/
+.gnb {
+    position: relative;
+    top: 41%;
+    left: 5.4%;
+    transform: translateY(-50%);
+    padding: 0;
+    margin: 0;
+}
+
+/*메뉴 글씨 설정*/
+.gnb a {
+    letter-spacing: -1px;
+    font-family: 'malgun';
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.gnb a:hover {
+    text-decoration: none;
+    border-bottom: 5px solid #273346;
+    padding-bottom: 21px;
+
+}
+
+/*글씨들 왼쪽으로 마진 주기*/
+.gnb li + li {
+    margin-left: 60px;
+}
+
+/*메뉴모양 버튼*/
+.tmenu {
+    position: relative;
+    top: 50%;
+    left: 60%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 40px;
+    height: 40px;
+    outline: 1px solid #e0e0e1;
+    background-color: #fff;
+    /*opacity: .5;*/
+}
+
+
+
+/*메뉴 모양 이미지*/
+.tmenu img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+/*3.배너영역*/
+.b1 {
+    height: 476px;
+}
+
+.menubox {
+    position: relative;
+    top: 62%;
+    left: -40.9%;
+    width: 1983px;
+    height: 369px;
+    /*outline: 2px solid green;*/
+    overflow: hidden;
+
+
+}
+
+.banbox,
+.banbox li {
+    position: absolute;
+    top: 0;
+    left: 0.05%;
+    width: 100%;
+    height: 100%;
+}
+
+.banbox li {
+    opacity: 0;
+    transition: opacity .8s ease-in-out;
+    z-index: -1;
+}
+
+.banbox li.on {
+    opacity: 1;
+    z-index: 1;
+
+}
+
+.banbox li:nth-child(1) {
+    background: url(../images/ban00.gif) no-repeat;
+}
+
+.banbox li:nth-child(2) {
+    background: url(../images/ban01.gif) no-repeat;
+}
+
+
+
+
+.abtn {
+    position: absolute;
+    top: 51.35%;
+
+    /*세로중앙이동*/
+    width: 25px;
+    height: 49px;
+    z-index: 2;
+    /*배너리스트보다 위에 옴!*/
+    /*outline: 2px solid red;*/
+}
+
+
+.lb {
+    left: -33px;
+    background: url(../images/btn_shop_bn_left.png) no-repeat;
+}
+
+/*오른쪽이동버튼*/
+.rb {
+    right: -33px;
+    background: url(../images/btn_shop_bn_right.png) no-repeat;
+}
+
+/*이동버튼 공통 마우스 오버시 배경이미지 위치변경하기*/
+.abtn:hover {
+    background-position: 0 -49px;
+}
+
+.banbtn1 {
+    position: absolute;
+    bottom: 10%;
+    left: 60%;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #e9352e;
+    z-index: 2;
+    /* outline: 1px solid red;*/
+
+}
+
+.banbtn2 {
+    position: absolute;
+    bottom: 10%;
+    left: 67%;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #e9352e;
+    z-index: 2;
+    /*outline: 1px solid red;*/
+}
+
+.bangray {
+    background-color: #9e9c9d;
+}
+
+.indic li div {
+    position: absolute;
+    /*이미지 겹치게*/
+}
+
+.indic li div:last-child {
+    /*회색이미지만 투명하게*/
+    opacity: 0;
+}
+
+/*회색블릿이미지가 보이게하는 class*/
+.indic li.on div:last-child {
+    /*회색이미지만 투명하게*/
+    opacity: 1;
+    /*우선적용!*/
+}
+
+
+
+
+
+.bgimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.menu {
+    position: relative;
+    top: 0;
+    left: 4.2%;
+    width: 1903px;
+    height: 369px;
+    background-color: #ffffff;
+    opacity: 1;
+    /* transition: height .4s ease-out;*/
+    overflow: hidden;
+    z-index: 3;
+
+
+
+}
+
+. dl {
+    float: left;
+
+}
+
+dt {
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: -1px;
+    padding-bottom: 20px;
+
+}
+
+dd {
+    color: #666;
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: -1.7px;
+
+}
+
+dd + dd {
+    margin-top: 8.2px;
+}
+
+.menu1 {
+    position: absolute;
+    top: 32.4px;
+    left: 19.9%;
+}
+
+.menu2 {
+    position: absolute;
+    top: 32.4px;
+    left: 28.4%;
+}
+
+.menu3 {
+    position: absolute;
+    top: 198px;
+    left: 28.4%;
+}
+
+.menu4 {
+    position: absolute;
+    top: 32.4px;
+    left: 36.9%;
+}
+
+.menu5 {
+    position: absolute;
+    top: 198px;
+    left: 36.9%;
+}
+
+.menu6 {
+    position: absolute;
+    top: 32.4px;
+    left: 45.4%;
+}
+
+.menu7 {
+    position: absolute;
+    top: 32.4px;
+    left: 53.9%;
+}
+
+.menu8 {
+    position: absolute;
+    top: 32.4px;
+    left: 62.3%;
+}
+
+.menu9 {
+    position: absolute;
+    top: 32.4px;
+    left: 70.8%;
+}
+
+dd:hover {
+    text-decoration: underline;
+    color: #1d1d8e;
+}
+
+/*배너에 있는 링크*/
+.banlink {
+    position: relative;
+    top: 16%;
+    left: 26%;
+    z-index: 1;
+}
+
+/*배너에 있는 링크 마진 패딩 없애기*/
+.banlink a {
+    padding: 0;
+    margin: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+/*배너 링크들 박스 설정*/
+.banlink li {
+    width: 167px;
+    height: 50px;
+    /* outline: 1px solid green;*/
+    font-family: 'malgun';
+    text-align: center;
+    font-size: 1rem;
+    line-height: 48px;
+    font-weight: 500;
+    box-sizing: border-box;
+    background-color: rgba(68, 68, 68, 0.7);
+    color: #FFF;
+}
+
+/*배너 링크들 글씨 설정*/
+.banlink li:nth-child(1) {
+    letter-spacing: -2.4px;
+}
+
+.banlink li:nth-child(2) {
+    letter-spacing: -2.6px;
+}
+
+.banlink li:nth-child(3) {
+    letter-spacing: -2.5px;
+}
+
+.banlink li:nth-child(4) {
+    letter-spacing: -1.6px;
+}
+
+.banlink li:nth-child(5) {
+    letter-spacing: -2.6px;
+}
+
+.banlink li:nth-child(6) {
+    letter-spacing: -2.6px;
+
+}
+
+/*박스랑 박스 마진설정*/
+.banlink li + li {
+    margin-top: 10px;
+}
+
+
+/*4. 컨텐츠영역*/
+/*컨텐츠 1번박스 전체*/
+.cont {
+    height: 480px;
+}
+
+/*컨테츠1*/
+.c11 {
+    height: 496px;
+    padding: 0;
+    margin: 0;
+    margin-top: -20px;
+    z-index: 3;
+}
+
+/*컨텐츠 1-1 박스*/
+.cont11box {
+    width: 379.98px;
+    height: 100%;
+    /* opacity: .5;*/
+    /* outline: 1px solid green;*/
+}
+
+/*컨텐츠1 박수속에 위에 박스 설정*/
+.cont11box1up {
+    width: 100%;
+    height: 240px;
+    /*outline: 1px solid #ffd800;*/
+}
+
+/*위에 박스 배경 이미지*/
+.cont11boxinbox {
+    width: 100%;
+    height: 100%;
+    background: #f1f4f9 url(../images/bg-show-time.png) no-repeat right top;
+
+}
+
+/*위에 박스 타이틀*/
+.cont11box1tit {
+    position: relative;
+    top: 6%;
+    left: 5%;
+    font-size: 1.375rem;
+    color: #333;
+    font-weight: 600;
+    font-family: 'malgun';
+    letter-spacing: -3.2px;
+}
+
+/*위에박스 텍스트*/
+.cont11box1txt1 {
+    position: relative;
+    top: 27.5%;
+    left: -15%;
+    color: #e9352e;
+    letter-spacing: -0.4px;
+    font-size: 0.875rdm
+}
+
+/*위박스 두번째텍스트*/
+.cont11box1txt2 {
+    position: relative;
+    top: 29.8%;
+    left: -15%;
+    color: #333;
+    letter-spacing: -0.4px;
+}
+
+/*위에박스 중요글씨*/
+.cont11boxinbox .cont11box1p {
+    position: relative;
+    top: 34%;
+    left: 5%;
+    color: #024da1;
+    letter-spacing: -3.8px;
+    font-size: 0.875rdm
+}
+
+/*위에박스속박스 설정*/
+.cont11boxinbox2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*위에박스속박스 개별설정*/
+.cont11boxinbox2 li {
+    width: 33.333%;
+    height: 78px;
+    outline: 1px solid #d9dae1;
+    background-color: #ffffff
+}
+
+.cont11boxinbox2 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/*위에박스속박스 이미지*/
+.cont11boximg {
+    position: relative;
+    top: 22%;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+/*위에박스속박스 텍스트*/
+.cont11boxinboxtxt {
+    position: relative;
+    top: 28%;
+    left: 29%;
+    color: #333;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    letter-spacing: -2.2px;
+}
+
+.cont11box1down {
+    position: relative;
+    top: 3.8%;
+    left: 0;
+    width: 379.98px;
+    height: 238px;
+    outline: 1px solid #d9dae1;
+    background-color: #fff;
+}
+
+.boxtit {
+    position: relative;
+    top: 9%;
+    left: 6%;
+    font-size: 1.375rem;
+    color: #333;
+    font-weight: 600;
+    font-family: 'malgun';
+    letter-spacing: -1.6px;
+}
+
+.boxmore {
+    position: relative;
+    top: 0;
+    left: 88%;
+}
+
+.boxli {
+    position: relative;
+    top: 8.5%;
+    left: 9.3%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 85%;
+
+}
+
+.boxli1 {
+    font-size: 0.9375rem;
+    color: #444;
+    display: block;
+    /*******************************/
+    /* [ 넘치는 글자 말줄임 표시하기 ] */
+    /*한줄말줄임처리는 1,2,3,4번을 사용함!*/
+    /*
+        여러줄처리하기(2줄짜리)
+        줄바꿈방지(2번)를 하지 않는다!
+        그리고 5,6,7,8번을 적용해 준다!
+    */
+    /*1.넘치는 요소 숨기기-공통*/
+    overflow: hidden;
+    /*2.줄바꿈방지-한줄일때만*/
+    /*white-space: nowrap;*/
+    /*3.박스가로크기를 지정해야 숨겨진다!-공통*/
+    width: 100%;
+    /*4.말줄임표-입술에 손대며 말하지마...!-공통*/
+    text-overflow: ellipsis;
+}
+
+.textbox {
+    outline: 1px solid green;
+}
+
+
+.boxli li + li {
+    margin-top: 2.52%;
+}
+
+.boxli li:nth-child(1) {
+    letter-spacing: -2.3px;
+}
+
+.boxli li:nth-child(2) {
+    letter-spacing: -1px;
+}
+
+.boxli li:nth-child(3) {
+    letter-spacing: -1px;
+}
+
+
+
+
+.cont11box2 {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 379.98px;
+    height: 100%;
+    /*outline: 1px solid green;*/
+}
+
+.newbox1 {
+    position: relative;
+    top: 0;
+    right: -3.5%;
+    width: 379.98px;
+    height: 238px;
+    outline: 1px solid #d9dae1;
+    background-color: #fff;
+}
+
+.newbox2 {
+    position: relative;
+    top: 3.8%;
+    right: -3.5%;
+    width: 379.98px;
+    height: 238px;
+    outline: 1px solid #d9dae1;
+    background-color: #fff;
+}
+
+
+
+
+/*1번에 백그라운드 넣기*/
+
+
+/*컨텐츠1 배너*/
+.hisbox {
+    width: 100%;
+    height: 100%;
+    /* outline: 1px solid orange;*/
+}
+
+.his1 {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.his2 {
+    position: relative;
+    top: 44%;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.con12box {
+    width: 100%;
+    height: 100%;
+}
+
+.con12box1 {
+    position: relative;
+    left: 1.8%;
+    /* transform: translateX(-50%);*/
+}
+
+.playbox {
+    position: relative;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 379.98px;
+    height: 50px;
+    border: 1px solid #d9dae1;
+    background-color: #f1f4f9;
+}
+
+.playicon {
+    position: relative;
+    top: 50%;
+    left: 92.5%;
+    transform: translate(-50%, -50%);
+}
+
+.playicon li + li {
+    margin-left: 10px;
+}
+
+
+/*
+컨텐츠 2-1
+.cont2 {
+    position: relative;
+    padding-top: 13px;
+
+}*/
+
+
+.c21 {
+    margin-top: 12px;
+}
+
+
+/*2-1배너*/
+#ban1 {
+    width: 100%;
+    height: 100%;
+}
+
+/*왼쪽 보너 설정*/
+.ban1 {
+    position: relative;
+    height: auto;
+}
+
+.ban1::before,
+.ban2::before {
+    content: "";
+    display: block;
+    padding-top: 35%;
+}
+
+/*왼쪽 보너 설정*/
+#ban1 li {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: url(../images/03png.png) no-repeat left/auto 101%;
+}
+
+/*배너 이미지 설정*/
+#ban1 img {
+    width: 100%;
+    height: 100%;
+}
+
+/*내부비율유지박스 속박스*/
+.rbxin {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*2-1배너*/
+.ban2 {
+    position: relative;
+    background: url(../images/1.png) no-repeat center/100% auto;
+    /* outline: 1px solid green;*/
+    /*    height: 200px;*/
+
+}
+
+
+/*컨테2 두번째배너칸 십자가*/
+.more {
+    position: relative;
+    top: 25px;
+    left: 92%;
+    width: 16px;
+    height: 16px;
+    /*outline: 1px solid #fff;*/
+}
+
+/*컨테2 두번째 배너칸 타이틀*/
+.cont212tit {
+    position: relative;
+    top: 11px;
+    left: 5.6%;
+    font-size: 1.375rem;
+    font-family: 'malgun';
+    color: #fff;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: -3.2px;
+}
+
+.ban2 ul {
+    list-style: none;
+}
+
+.ban2 ul li {
+    float: none
+}
+
+.cont212txt {
+
+    padding-top: 5.7%;
+    padding-left: 7.4%;
+    font-weight: 400;
+}
+
+
+.cont212txt li {
+    overflow: hidden;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    letter-spacing: -2.1px;
+}
+
+.cont212txt li + li {
+    margin-top: 2%
+}
+
+.cont212txt a {
+    color: #fff;
+    font-weight: 400;
+}
+
+/*패딩 0주기*/
+.ban {
+    padding: 0;
+}
+
+
+/*컨텐츠 2-2*/
+.c22 {
+    margin-top: 22px;
+    height: 139px;
+}
+
+/*첫번째 박스 설정*/
+#cont221 {
+    width: 280px;
+    height: 139px;
+    outline: 1px solid #d9dae1;
+    background-color: #f1f4f9;
+}
+
+/*두번째 박스 설정*/
+#cont222 {
+    width: 280px;
+    height: 139px;
+    outline: 1px solid #d9dae1;
+    background-color: #f1f4f9;
+}
+
+/*두번쨰 박스 패딩*/
+.cont222 {
+    padding-left: 2%;
+
+}
+
+/*세번째 박스 설정*/
+#cont223 {
+    width: 280px;
+    height: 139px;
+    outline: 1px solid #d9dae1;
+    background-color: #f1f4f9;
+}
+
+/*세번쨰 박스 패딩*/
+.cont223 {
+    padding-left: 3.4%;
+}
+
+/*네번째 박스 설정*/
+#cont224 {
+    position: relative;
+    left: 4%;
+    width: 280px;
+    height: 139px;
+    outline: 1px solid #d9dae1;
+    background-color: #f1f4f9;
+}
+
+/*네번쨰 박스 패딩*/
+.cont224 {
+    padding-left: 1.4%;
+}
+
+/*컨텐츠2 타이틀 1~4번 세팅*/
+.cont2tit {
+    font-size: 1.1875rem;
+    font-family: 'malgun';
+    font-weight: 700;
+    color: #333;
+}
+
+/*컨텐츠2 타이들1번설정*/
+.cont2tit1 {
+    position: relative;
+    top: 11.5%;
+    left: 9%;
+    letter-spacing: -2.5px;
+}
+
+/*컨텐츠2 타이들2번설정*/
+.cont2tit2 {
+    position: relative;
+    top: 12.5%;
+    left: 9.3%;
+    letter-spacing: -2.2px;
+}
+
+/*컨텐츠2 타이들3번설정*/
+.cont2tit3 {
+    position: relative;
+    top: 12.5%;
+    left: 9%;
+    letter-spacing: -2.8px;
+}
+
+/*컨텐츠2 타이들4번설정*/
+.cont2tit4 {
+    position: relative;
+    top: 12.5%;
+    left: 8.8%;
+    letter-spacing: -3.3px;
+}
+
+
+/*컨텐츠2 텍스트 1~4번 설정*/
+.cont2txt {
+    font-size: 0.9375rem;
+    font-family: 'malgun';
+    font-weight: 700;
+    color: #888;
+}
+
+/*컨텐츠2 텍스트 1번 설정*/
+.cont2txt1 {
+    position: relative;
+    top: 18%;
+    left: 9%;
+    letter-spacing: -2.3px;
+}
+
+/*컨텐츠2 텍스트 2번 설정*/
+.cont2txt2 {
+    position: relative;
+    top: 36%;
+    left: -23%;
+    letter-spacing: -2.2px;
+}
+
+/*컨텐츠2 텍스트 3번 설정*/
+.cont2txt3 {
+    position: relative;
+    top: 18%;
+    left: 9%;
+    letter-spacing: -2.1px;
+}
+
+/*컨텐츠2 텍스트 4번 설정*/
+.cont2txt4 {
+    position: relative;
+    top: 36%;
+    left: -20.6%;
+    letter-spacing: -2.2px;
+}
+
+/*컨텐츠2 화살표 1번 설정*/
+.cont2arr1 {
+    position: relative;
+    top: 51%;
+    left: -57.5%;
+}
+
+/*컨텐츠2 화살표 2번 설정*/
+.cont2arr2 {
+    position: relative;
+    top: 41%;
+    left: 9%;
+}
+
+/*컨텐츠2 화살표 3번 설정*/
+.cont2arr3 {
+    position: relative;
+    top: 51%;
+    left: -64%;
+}
+
+/*컨텐츠2 화살표 4번 설정*/
+.cont2arr4 {
+    position: relative;
+    top: 69.5%;
+    left: -79%;
+}
+
+
+/*컨텐츠2 아이콘 1~4번 설정*/
+.cont2icon1 {
+    position: relative;
+    top: 37%;
+    left: 1%;
+}
+
+.cont2icon2 {
+    position: relative;
+    top: 29.5%;
+    left: 68.8%;
+
+}
+
+.cont2icon3 {
+    position: relative;
+    top: 36.3%;
+    right: 5%;
+}
+
+.cont2icon4 {
+    position: relative;
+    top: 27.5%;
+    left: 79%;
+}
+
+
+
+/*컨텐츠 3번박스*/
+#cont3 {
+    margin-top: 30px;
+
+}
+
+/*컨텐츠 3-1*/
+.c31 {
+    height: 297px;
+}
+
+/*컨첸츠311 타이틀*/
+.cont31tit {
+    font-size: 1.375rem;
+    font-family: 'malgun';
+    color: #444;
+    font-weight: 400;
+    letter-spacing: -1px;
+    line-height: .65;
+}
+
+.cont311tit1 {
+    position: relative;
+    top: 0;
+    left: -0.6%;
+    letter-spacing: -3px;
+
+}
+
+/*컨튼츠3 첫번째 더보기*/
+.cont31more1 {
+    width: 16px;
+    height: 16px;
+}
+
+.cont31more1 {
+    position: absolute;
+    top: 0.7%;
+    right: 5.2%;
+}
+
+/*컨튼츠3 첫번째 속박스*/
+.cont311box1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 378px;
+    height: 260px;
+    outline: 1px solid #e0e0e1;
+    background-color: #fff;
+}
+
+/*컨튼츠3 첫번째 속박스 이미지*/
+.cont311img1 {
+    /* opacity: .5;*/
+    position: relative;
+    /* top: 9.3%; */
+    left: 16.3%;
+    margin-top: 15%;
+}
+
+/*컨튼츠3 첫번째 속박스 제목*/
+.cont311boxtit1 {
+    position: relative;
+    left: 12%;
+    font-size: 1.1875rem;
+    color: #333;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: "맑은 고딕";
+    letter-spacing: -2.4px;
+    margin-top: 6%;
+}
+
+/*컨튼츠3 첫번째 속박스 텍스트*/
+.cont311boxtxt1 {
+    position: relative;
+    left: 11.5%;
+    font-size: 0.9375rem;
+    color: #888;
+    line-height: 21px;
+    font-family: "맑은 고딕";
+    letter-spacing: -2.2px;
+    margin-top: 4.2%;
+}
+
+/*컨튼츠3 첫번째 속박스 안에 속박스*/
+.cont311boxinbox1 {
+    position: relative;
+    bottom: 0;
+    right: -34.3%;
+    width: 131.41px;
+    height: 34px;
+    outline: 1px solid #e0e0e1;
+    margin-top: 55%;
+    background-color: #fff;
+
+}
+
+/*컨튼츠3 첫번째 속박스 속박스 안에 속박스 텍스트*/
+.cont311boxinboxtxt1 {
+    position: relative;
+    top: 47%;
+    left: 16%;
+    transform: translateY(-50%);
+    font-size: 0.875rem;
+    color: #505558;
+    letter-spacing: -2.2px;
+}
+
+/*컨튼츠3 첫번째 속박스 안에 속박스 이미지*/
+.cont311boxinboximg1 {
+    position: absolute;
+    top: 50%;
+    right: 15.5%;
+    transform: translateY(-50%);
+
+
+}
+
+
+
+/*컨텐츠3 두번째 타이틀*/
+.cont312tit {
+    position: relative;
+    top: 0;
+    left: 1.4%;
+    letter-spacing: -3px;
+}
+
+/*컨텐츠 두번째 더보기*/
+.cont312more {
+    position: absolute;
+    top: 0.7%;
+    right: 3.4%;
+    ;
+}
+
+/*컨텐츠 두번째 박스*/
+.cont312box {
+    position: relative;
+    top: 10%;
+    left: 2%;
+    width: 378px;
+    height: 260px;
+    outline: 1px solid #e0e0e1;
+    margin-top: 6%;
+    background-color: #fff;
+}
+
+/*컨텐츠 두번째 박스 이미지*/
+.cont312img {
+    position: relative;
+    left: 15.6%;
+    /*opacity: .5;*/
+    margin-top: 15%;
+}
+
+/*컨텐츠 두번째 박스 타이틀*/
+.cont312boxtit {
+    position: relative;
+    left: 12%;
+    font-size: 1.1875rem;
+    color: #333;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: "맑은 고딕";
+    letter-spacing: -2.4px;
+    margin-top: 6%;
+}
+
+/*컨텐츠 두번째 박스 테스트*/
+.cont312boxtxt {
+    position: relative;
+    left: 11.3%;
+    font-size: 0.9375rem;
+    color: #888;
+    line-height: 21px;
+    font-family: "맑은 고딕";
+    letter-spacing: -2.4px;
+    margin-top: 4.3%;
+}
+
+/*컨텐츠 두번째 속박스*/
+.cont312boxinbox {
+    position: relative;
+    right: -34%;
+    width: 131.41px;
+    height: 34px;
+    outline: 1px solid #e0e0e1;
+    margin-top: 23%;
+    background-color: #fff;
+}
+
+/*컨텐츠 두번째 속박스 더보기*/
+.cont312boxinboximg {
+    position: absolute;
+    top: 50%;
+    right: 15.5%;
+    transform: translateY(-50%);
+}
+
+/*컨텐츠 두번째 속박스 텍스트*/
+.cont312boxinboxtxt {
+    position: relative;
+    top: 47%;
+    left: 16%;
+    transform: translateY(-50%);
+    font-size: 0.875rem;
+    color: #505558;
+    letter-spacing: -2.2px;
+}
+
+
+
+/*컨텐츠3 세번째 타이틀*/
+.cont313tit {
+    position: relative;
+    top: 0;
+    left: 2.7%;
+    letter-spacing: -3px;
+}
+
+/*컨텐츠3 세번째 플리어어*/
+.cont313play {
+    position: relative;
+    top: 0;
+    left: 557%;
+}
+
+/*컨텐츠3 세번째 플레이어 왼쪽 마진*/
+.cont313play li + li {
+    margin-left: 10px;
+}
+
+/*컨텐츠3 세번째 위쪽 이미지*/
+.cont313img1 {
+    position: relative;
+    right: -17px;
+    /*opacity: .5;*/
+    margin-top: 6%;
+}
+
+/*컨텐츠3 세번째 아래쪽 이미지*/
+.cont313img2 {
+    position: relative;
+    left: 4.5%;
+    /* opacity: .5;*/
+    margin-top: 4%;
+}
+
+
+
+/*컨텐츠 3-2*/
+.c32 {
+    margin-top: 25px;
+    height: 53px;
+}
+
+/*컨텐츠 3*/
+.c33 {
+    margin-top: 25px;
+    height: 53px;
+}
+
+
+/*컨텐츠3-2박스 크기*/
+.cont32box {
+    position: relative;
+    top: -1%;
+    left: 0;
+    width: 373.41px;
+    height: 100%;
+    border: 1px solid #e0e0e1;
+    background-color: #fff;
+}
+
+/*컨텐츠3-2 텍스트*/
+.cont32tit {
+    color: #666;
+    font-weight: 500;
+    font-size: 1.0625rem;
+
+}
+
+/*컨텐츠 텍스트 1.4 세팅*/
+.cont321tit {
+    position: relative;
+    left: 6%;
+    letter-spacing: -2.4px;
+    margin-top: 3.8%;
+}
+
+/*컨텐츠3 더보기 설정*/
+.cont32more {
+    position: relative;
+    left: 50%;
+    margin-top: 3.5%;
+}
+
+/*컨텐츠3 박스2 설정*/
+.cont32box2 {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 373.41px;
+    height: 100%;
+    border: 1px solid #e0e0e1;
+}
+
+/*컨텐츠3 두번째  2번째 타이틀*/
+.cont322tit {
+    position: relative;
+    left: 6%;
+    transform: translateY(-50%);
+    color: #666;
+    font-weight: 500;
+    font-size: 1.0625rem;
+    letter-spacing: -2.4px;
+    margin-top: 6.7%;
+}
+
+/*컨텐츠3 두번째 박스3*/
+.cont32box3 {
+    position: relative;
+    left: 4%;
+}
+
+/*컨텐츠3 두번째 3박스 타이틀*/
+.cont323tit {
+    position: absolute;
+    top: 46%;
+    left: 6%;
+    color: #666;
+    font-weight: 500;
+    font-size: 1.0625rem;
+    letter-spacing: -2.4px;
+    margin-top: -2.5%;
+}
+
+.cont32more1 {
+    position: relative;
+    left: 86.5%;
+    margin-top: 3.5%;
+}
+
+.cont32more2 {
+    position: relative;
+    left: 39.5%;
+    margin-top: 3.5%;
+}
+
+
+
+
+
+/*5.하단영역*/
+.info {
+    margin-top: 82px;
+    border-top: 2px solid #484848;
+
+}
+
+
+.i11 {
+    height: 50px;
+}
+
+/*하단 링크*/
+.user {
+    position: relative;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 0.875rem;
+    letter-spacing: -2.55px;
+    font-weight: 400;
+    color: #666;
+}
+
+/*개인정보처리방침 레드만들기*/
+.red {
+    color: #ee1122
+}
+
+/*리스트끼리 왼쪽마진*/
+.user li + li {
+    margin-left: 20px;
+}
+
+/*하단 전화번호 펙스*/
+.tel {
+    position: relative;
+    top: 50%;
+    left: 17.5%;
+    transform: translateY(-50%);
+    font-size: 0.875rem;
+    letter-spacing: -1.41px;
+    font-weight: 400;
+    color: #666;
+}
+
+/*리스트 끼리 마진*/
+.tel li + li {
+    margin-left: 20px;
+}
+
+
+.i12 {
+    height: 110px;
+}
+
+/*하단 로고*/
+.flogo {
+    position: relative;
+    top: 48%;
+    transform: translateY(-50%);
+}
+
+/*하단 설명박스*/
+.foottxt1 {
+    position: relative;
+    left: 1.2%;
+
+    margin-left: 30px;
+    font-size: 0.875rem;
+    line-height: 20px;
+    color: #797c83;
+    margin: 0;
+    padding: 0;
+    letter-spacing: -2.8px;
+    margin-top: 4%;
+}
+
+/*하단 설명박스2*/
+.foottxt2 {
+    position: relative;
+    left: -41.8%;
+    margin-left: 30px;
+    font-size: 0.875rem;
+    line-height: 20px;
+    color: #797c83;
+    margin: 0;
+    padding: 0;
+    letter-spacing: -2.3px;
+    margin-top: 7.6%;
+}
+
+/*하단 설명박스3*/
+.foottxt3 {
+    position: relative;
+    top: 68%;
+    left: 1.2%;
+
+    margin-left: 30px;
+    font-size: 0.875rem;
+    line-height: 20px;
+    color: #797c83;
+    margin: 0;
+    padding: 0;
+    letter-spacing: -1.6px;
+}
+
+/*하단 sns*/
+.sns {
+    position: relative;
+    left: 24.6%;
+    margin: 0;
+    padding: 0;
+    /*opacity: .5;*/
+    margin-top: 9.6%;
+}
+
+/*하단 sns끼리 마진*/
+.sns li + li {
+    margin-left: 12px;
+}
+
+/*하단 sns첫번째꺼 다시 설정*/
+.sns li:nth-child(1) {
+    position: relative;
+    left: 0%;
+    margin-top: -1%;
+}
+
+/*독립이 고정설정*/
+.fix {
+    position: fixed;
+    bottom: 2.8%;
+    right: 1.1%;
+    z-index: 9999
+}
+
+.fix img {
+    border-radius: 50%;
+}
+
+/*숨기기class*/
+.dn {
+    display: none;
+}
+
+
+
+.line {
+    position: absolute;
+    top: 33%;
+    left: -31%;
+    width: 1920px;
+    height: 10px;
+    /*outline: 1px solid red;*/
+    border-top: 1px solid #e0e0e1;
+}

@@ -1,0 +1,556 @@
+@charset "utf-8";
+
+/*홈 페이지 따라하기 media.css*/
+
+
+@media only screen and (max-width:1024px) {
+
+    /*12컬럼 %셋팅 class*/
+    .col-2nd-1 {
+        width: 8.33%;
+    }
+
+    .col-2nd-2 {
+        width: 16.66%;
+    }
+
+    .col-2nd-3 {
+        width: 25%;
+    }
+
+    .col-2nd-4 {
+        width: 33.33%;
+    }
+
+    .col-2nd-5 {
+        width: 41.66%;
+    }
+
+    .col-2nd-6 {
+        width: 50%;
+    }
+
+    .col-2nd-7 {
+        width: 58.33%;
+    }
+
+    .col-2nd-8 {
+        width: 66.66%;
+    }
+
+    .col-2nd-9 {
+        width: 75%;
+    }
+
+    .col-2nd-10 {
+        width: 83.33%;
+    }
+
+    .col-2nd-11 {
+        width: 91.66%;
+    }
+
+    .col-2nd-12 {
+        width: 100%;
+    }
+
+}
+
+/*미디어쿼리 - 1024이하*/
+
+
+/*모바일 미디어 쿼리*/
+@media only screen and (max-width:500px) {
+
+    /* 클래스에 "col-를 가진 모든요소에 적용*/
+    [class*="col-"] {
+        width: 100%;
+
+    }
+
+
+
+    .ibx {
+        position: static;
+    }
+
+    #cont2 ol {
+        position: static;
+        width: 100%;
+    }
+
+    #cont2 ol li,
+    #cont3 > div div {
+        position: static;
+        transform: none;
+    }
+
+    #cont3 > div {
+        margin: 5%;
+        width: 90%;
+    }
+
+    #cont3 ol li div {
+        position: static;
+        width: 100%;
+    }
+
+    img {
+        position: static !important;
+        max-width: 100%;
+    }
+
+    .cont313play {
+        position: absolute;
+        top: 0;
+        left: auto;
+        right: 2%;
+    }
+
+    .gnb {
+        display: none;
+    }
+
+    .flogo {
+        position: relative;
+        top: 60%;
+        left: 112px;
+        transform: translateY(-50%);
+    }
+
+    .foottxt1 {
+        position: relative;
+        left: 20.2%;
+        font-size: 0.875rem;
+        line-height: 20px;
+        color: #797c83;
+        margin: 0;
+        padding: 0;
+        letter-spacing: -1.8px;
+    }
+
+    .foottxt2 {
+        position: relative;
+        left: 24.2%;
+        font-size: 0.875rem;
+        line-height: 20px;
+        color: #797c83;
+        margin: 0;
+        padding: 0;
+        letter-spacing: -2.3px;
+    }
+
+    .foottxt3 {
+        position: relative;
+        left: 10%;
+        font-size: 0.875rem;
+        line-height: 20px;
+        color: #797c83;
+        margin: 0;
+        padding: 0;
+        letter-spacing: -1.6px;
+    }
+
+    .flogo {
+        position: relative;
+        left: 34%;
+    }
+
+    .user li {
+        position: relative;
+        left: 1%;
+    }
+
+    /*독립이 고정설정*/
+    .fix {
+        position: fixed;
+        bottom: 2.8%;
+        right: 1.1%;
+        z-index: 9999
+    }
+
+    .fix img {
+        border-radius: 50%;
+    }
+
+    .sns {
+        position: relative;
+        left: 16.6%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .user {
+        position: relative;
+        top: 50%;
+        left: 70px;
+        font-size: 0.875rem;
+        letter-spacing: -2.55px;
+        font-weight: 400;
+        color: #666;
+    }
+
+    .tel {
+        position: relative;
+        top: 50%;
+        left: 22.5%;
+        font-size: 0.875rem;
+        letter-spacing: -1.41px;
+        font-weight: 400;
+        color: #666;
+    }
+
+    .info {
+        border-top: 2px solid #484848;
+    }
+
+    .i12 {
+        height: 70px;
+    }
+
+    .cont312more {
+        margin-left: 312px;
+    }
+
+    .c31 {
+        height: 284px;
+    }
+
+    .c32 {
+        margin: 0;
+    }
+
+    .c22 {
+        margin-top: 22px;
+        height: 90px;
+    }
+
+    .cont311tit1 {
+        margin-bottom: 25px;
+    }
+
+    .cont31more1 {
+        padding-left: 198px
+    }
+
+    .cont311boxinboximg1 {
+        margin-top: 16px;
+        margin-left: 39px;
+    }
+
+    .cont312boxinboximg {
+        margin-top: 16px;
+        margin-left: 39px;
+    }
+
+    .cont2tit1 {
+        margin-top: 10px;
+        margin-left: 20px;
+        letter-spacing: -2.5px;
+    }
+
+    .cont2txt1 {
+        margin-top: 40px;
+        margin-left: -104px;
+        letter-spacing: -2.3px;
+    }
+
+    .cont2icon1 {
+        margin-top: 32px;
+        margin-left: 98px;
+    }
+
+    .cont2arr1 {
+        margin-top: 75px;
+        margin-left: -187px;
+    }
+
+
+    .cont2tit2 {
+        margin-top: 10px;
+        margin-left: 20px;
+        letter-spacing: -2.5px;
+    }
+
+    .cont2txt2 {
+        margin-top: 40px;
+        margin-left: -90px;
+        letter-spacing: -2.3px;
+    }
+
+    .cont2icon2 {
+        margin-top: 32px;
+        margin-left: 116px;
+    }
+
+    .cont2arr2 {
+        margin-top: 75px;
+        margin-left: -174px;
+    }
+
+    .cont2tit3 {
+        margin-top: 10px;
+        margin-left: 20px;
+        letter-spacing: -2.5px;
+    }
+
+    .cont2txt3 {
+        margin-top: 40px;
+        margin-left: -104px;
+        letter-spacing: -2.3px;
+    }
+
+    .cont2icon3 {
+        margin-top: 32px;
+        margin-left: 83px;
+    }
+
+    .cont2arr3 {
+        margin-top: 75px;
+        margin-left: -200px;
+    }
+
+    .cont2tit4 {
+        margin-top: 10px;
+        margin-left: 20px;
+        letter-spacing: -2.5px;
+    }
+
+    .cont2txt4 {
+        margin-top: 40px;
+        margin-left: -90px;
+        letter-spacing: -2.3px;
+    }
+
+    .cont2icon4 {
+        margin-top: 32px;
+        margin-left: 125px;
+    }
+
+    .cont2arr4 {
+        margin-top: 75px;
+        margin-left: -163px;
+    }
+
+    .more {
+        margin-top: 10px;
+        margin-left: 383px;
+    }
+
+    .cont212txt li + li {
+        margin: 0;
+    }
+
+    .newbox1 {
+        position: relative;
+        top: 0;
+        left: 4.5%;
+        /* transform: translateX(-50%); */
+        width: 379.98px;
+        height: 238px;
+        outline: 1px solid #d9dae1;
+        background-color: #fff;
+    }
+
+    .newbox2 {
+        position: relative;
+        top: 3.8%;
+        right: -4.5%;
+        width: 379.98px;
+        height: 238px;
+        outline: 1px solid #d9dae1;
+        background-color: #fff;
+    }
+
+    .con12box1 {
+        position: relative;
+        left: 4.5%;
+    }
+
+    .cont11box1down {
+        position: relative;
+        top: 3.8%;
+        left: 4.5%;
+        width: 379.98px;
+        height: 238px;
+        outline: 1px solid #d9dae1;
+        background-color: #fff;
+    }
+
+    .cont11box1up {
+        position: relative;
+        left: 4.5%;
+    }
+
+    .cont11boximg {
+        margin-left: 68px;
+        margin-top: 15px;
+    }
+
+    .cont11boxinboxtxt {
+        position: relative;
+        top: 8%;
+        left: 29%;
+        color: #333;
+        font-weight: 500;
+        font-size: 0.9375rem;
+        letter-spacing: -2.2px;
+    }
+
+    #cont2 ol {
+        position: static;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .ban2 {
+        position: relative;
+        left: 4.5%;
+        width: 90%;
+
+    }
+
+    .cont212tit {
+        margin: 0;
+        padding: 0;
+        margin-top: -5px;
+    }
+
+    .cont212txt {
+        padding-top: 10px;
+    }
+
+
+    .lang {
+        display: none;
+    }
+
+    .langbtn {
+        display: none;
+    }
+
+    .cont222 {
+        padding: 0;
+    }
+
+    .cont223 {
+        padding: 0;
+    }
+
+    .cont224 {
+        padding: 0;
+    }
+
+    .tmenu {
+        margin-top: -40px;
+        margin-left: 100px;
+        outline: 1px solid #fff;
+    }
+
+    .tmenu img {
+        margin-top: 20px;
+        margin-left: 20px
+    }
+
+    #logo {
+        position: relative;
+        top: 112%;
+        left: 10%;
+        width: 70%;
+    }
+
+    .banbox li:nth-child(1) {
+        background: url(../images/ban03.gif) no-repeat;
+    }
+
+    .banbox li:nth-child(2) {
+        background: url(../images/ban02.gif) no-repeat;
+    }
+
+    .banbtn1 {
+        position: absolute;
+        bottom: 10%;
+        left: 60%;
+        display: block;
+        width: 20px;
+        height: 3px;
+        background-color: #e9352e;
+        z-index: 2;
+        /* outline: 1px solid red;*/
+
+    }
+
+    .banbtn2 {
+        position: absolute;
+        bottom: 10%;
+        left: 67%;
+        display: block;
+        width: 20px;
+        height: 3px;
+        background-color: #e9352e;
+        z-index: 2;
+        /*outline: 1px solid red;*/
+    }
+    
+   
+
+
+
+    #cont221 {
+        height: 100px;
+    }
+
+    #cont222 {
+        height: 100px;
+    }
+
+    #cont223 {
+        height: 100px;
+    }
+
+    #cont224 {
+        height: 100px;
+    }
+
+    .c11 {
+        height: 530px;
+    }
+
+    .n1 {
+        height: 0;
+    }
+
+    .t1 {
+        height: 40px;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* 미디어쿼리 - 500이하*/
