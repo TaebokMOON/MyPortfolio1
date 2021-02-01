@@ -24,15 +24,6 @@ body {
     /*background: url(../images/bg6.png) no-repeat center top;*/
 }
 
-/* 뒤에 배경*/
-/*body {
-     background: url(../images/201912021575251937_pc.gif) no-repeat center 34%;
-     z-index: -1
-}*/
-
-/**:focus {
-    outline: none;
-}*/
 
 /*그리드 아래로 */
 .grid {
@@ -255,11 +246,11 @@ body {
 }
 
 .banbox li:nth-child(1) {
-    background: url(../images/ban00.gif) no-repeat;
+    background: url(../images/ban00.gif) no-repeat center/cover;
 }
 
 .banbox li:nth-child(2) {
-    background: url(../images/ban01.gif) no-repeat;
+    background: url(../images/ban01.gif) no-repeat center/cover;
 }
 
 
@@ -319,29 +310,48 @@ body {
     /*outline: 1px solid red;*/
 }
 
-.bangray {
-    background-color: #9e9c9d;
+/*블릿버튼*/
+.indic {
+    position: absolute;
+    /*부모는?  싸고있는 파티션박스(.prt줌)*/
+    bottom: 30px;
+    right: 250px;
+    z-index: 2;
+    /*포지션있어야적용!*/
 }
 
-.indic li div {
+
+
+/*.indic li div {
     position: absolute;
-    /*이미지 겹치게*/
+    이미지 겹치게
 }
 
 .indic li div:last-child {
-    /*회색이미지만 투명하게*/
+    
     opacity: 0;
 }
 
-/*회색블릿이미지가 보이게하는 class*/
+
 .indic li.on div:last-child {
-    /*회색이미지만 투명하게*/
+  
     opacity: 1;
-    /*우선적용!*/
+   
 }
 
+.indic img {
+    z-index: 9999;
+}
 
+.indic li:nth-child(1) {
+    margin-top: 420px;
+    margin-left: 527px;
+}
 
+.indic li:nth-child(2) {
+    margin-top: -22px;
+    margin-left: 580px;
+}*/
 
 
 .bgimg {
@@ -531,6 +541,23 @@ dd:hover {
     margin-top: -20px;
     z-index: 3;
 }
+
+/*오늘의 날짜*/
+.time {
+    position: absolute;
+    top: 7%;
+    right: 3%;
+    color: #024da1;
+    font-size: 1.3rem;
+}
+
+.month,
+.date,
+.day {
+    color: #e9352e;
+}
+
+
 
 /*컨텐츠 1-1 박스*/
 .cont11box {

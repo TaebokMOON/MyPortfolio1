@@ -112,15 +112,15 @@
     }
 
     .flogo {
-        position: relative;
-        top: 60%;
-        left: 112px;
-        transform: translateY(-50%);
+            position: relative;
+    top: 60%;
+    left: 28%;;
+        
     }
 
     .foottxt1 {
         position: relative;
-        left: 20.2%;
+        left: 16.2%;
         font-size: 0.875rem;
         line-height: 20px;
         color: #797c83;
@@ -131,7 +131,7 @@
 
     .foottxt2 {
         position: relative;
-        left: 24.2%;
+        left: 21.2%;
         font-size: 0.875rem;
         line-height: 20px;
         color: #797c83;
@@ -142,7 +142,7 @@
 
     .foottxt3 {
         position: relative;
-        left: 10%;
+        left: 7%;
         font-size: 0.875rem;
         line-height: 20px;
         color: #797c83;
@@ -151,10 +151,6 @@
         letter-spacing: -1.6px;
     }
 
-    .flogo {
-        position: relative;
-        left: 34%;
-    }
 
     .user li {
         position: relative;
@@ -175,7 +171,7 @@
 
     .sns {
         position: relative;
-        left: 16.6%;
+        left:14.6%;
         margin: 0;
         padding: 0;
     }
@@ -183,7 +179,7 @@
     .user {
         position: relative;
         top: 50%;
-        left: 70px;
+        left: 53px;
         font-size: 0.875rem;
         letter-spacing: -2.55px;
         font-weight: 400;
@@ -193,7 +189,7 @@
     .tel {
         position: relative;
         top: 50%;
-        left: 22.5%;
+        left: 20.5%;
         font-size: 0.875rem;
         letter-spacing: -1.41px;
         font-weight: 400;
@@ -274,7 +270,7 @@
 
     .cont2txt2 {
         margin-top: 40px;
-        margin-left: -90px;
+        margin-left: -87px;
         letter-spacing: -2.3px;
     }
 
@@ -318,7 +314,7 @@
 
     .cont2txt4 {
         margin-top: 40px;
-        margin-left: -90px;
+        margin-left: -87px;
         letter-spacing: -2.3px;
     }
 
@@ -411,6 +407,8 @@
     }
 
     .cont212tit {
+        position: relative;
+        top: 0;
         margin: 0;
         padding: 0;
         margin-top: -5px;
@@ -459,12 +457,18 @@
         width: 70%;
     }
 
+    .banbox {
+        height: 370px;
+    }
+
     .banbox li:nth-child(1) {
         background: url(../images/ban03.gif) no-repeat;
+        height: 369px;
     }
 
     .banbox li:nth-child(2) {
         background: url(../images/ban02.gif) no-repeat;
+        height: 369px;
     }
 
     .banbtn1 {
@@ -491,9 +495,50 @@
         z-index: 2;
         /*outline: 1px solid red;*/
     }
-    
-   
 
+    .indic {
+        position: absolute;
+        bottom: -100px;
+        right: 156px;
+        z-index: 2;
+        ;
+    }
+
+    .banlink li:nth-child(1) {
+        position: absolute;
+        top: 95px;
+        left: -90px;
+    }
+
+    .banlink li:nth-child(2) {
+        position: absolute;
+        top: 85px;
+        left: 107px;
+    }
+
+    .banlink li:nth-child(3) {
+        position: absolute;
+        top: 160px;
+        left: -90px;
+    }
+
+    .banlink li:nth-child(4) {
+        position: absolute;
+        top: 160px;
+        left: 107px;
+    }
+
+    .banlink li:nth-child(5) {
+        position: absolute;
+        top: 235px;
+        left: -90px;
+    }
+
+    .banlink li:nth-child(6) {
+        position: absolute;
+        top: 235px;
+        left: 107px;
+    }
 
 
     #cont221 {
@@ -525,23 +570,59 @@
 
     }
 
+    .cont311img1 {
+        margin-left: 20px;
+    }
 
+    .cont311boxtit1 {
+        margin-left: -15px;
+    }
 
+    .cont311boxtxt1 {
+        margin-left: -15px;
+    }
 
+    .cont312img {
+        margin-left: 20px;
+    }
 
+    .cont312boxtxt {
+        margin-left: -15px;
+    }
 
+    .cont312boxtit {
+        margin-left: -15px;
+    }
 
+    .banbtn1 {
+        position: relative;
+        bottom: 120px;
+        left: 180px;
+    }
 
+    .banbtn2 {
+        position: relative;
+        bottom: 120px;
+        left: 210px;
+    }
 
+    .b1 {
+        height: 253px;
+    }
 
-
-
-
-
-
-
-
-
+    .banlink li {
+        width: 181px;
+        height: 50px;
+        /* outline: 1px solid green; */
+        font-family: 'malgun';
+        text-align: center;
+        font-size: 1rem;
+        line-height: 47px;
+        font-weight: 500;
+        box-sizing: border-box;
+        background-color: rgba(68, 68, 68, 0.7);
+        color: #FFF;
+    }
 
 
 
