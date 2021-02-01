@@ -1646,6 +1646,7 @@ dd:hover {
 
 /*독립이 고정설정*/
 .fix {
+    background-image: url(../images/fixed1.png) no-repeat;
     position: fixed;
     bottom: 2.8%;
     right: 1.1%;
