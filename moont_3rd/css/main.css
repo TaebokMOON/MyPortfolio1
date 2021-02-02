@@ -25,6 +25,8 @@ body {
 }
 
 
+
+
 /*그리드 아래로 */
 .grid {
     z-index: -1
@@ -140,6 +142,13 @@ body {
     margin-top: 3px;
 }
 
+.mtmenu {
+    position: absolute;
+    top: 52%;
+    right: 0;
+    transform: translateY(-50%);
+    display: none;
+}
 
 
 

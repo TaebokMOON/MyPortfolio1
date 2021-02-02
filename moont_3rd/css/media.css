@@ -68,7 +68,17 @@
 
     }
 
+    body > * {
+        overflow: hidden;
+    }
 
+    .mtmenu {
+        position: absolute;
+        top: 52%;
+        right: 8%;
+        transform: translateY(-50%);
+        display: block;
+    }
 
     .ibx {
         position: static;
@@ -112,10 +122,11 @@
     }
 
     .flogo {
-            position: relative;
-    top: 60%;
-    left: 28%;;
-        
+        position: relative;
+        top: 60%;
+        left: 28%;
+        ;
+
     }
 
     .foottxt1 {
@@ -150,9 +161,9 @@
         padding: 0;
         letter-spacing: -1.6px;
     }
-    
-    
-    
+
+
+
     .user li {
         position: relative;
         left: 1%;
@@ -161,9 +172,9 @@
     /*독립이 고정설정*/
     .fix {
         position: fixed;
-        bottom: 2.8%;
-        right: 1.1%;
-        z-index: 9999
+        bottom: 9.8%;
+        right: 5.1%;
+        z-index: 9999;
     }
 
     .fix img {
@@ -172,7 +183,7 @@
 
     .sns {
         position: relative;
-        left:14.6%;
+        left: 14.6%;
         margin: 0;
         padding: 0;
     }
@@ -199,6 +210,7 @@
 
     .info {
         border-top: 2px solid #484848;
+        margin-top: 20px;
     }
 
     .i12 {
@@ -219,7 +231,7 @@
 
     .c22 {
         margin-top: 22px;
-        height: 90px;
+        height: 102px;
     }
 
     .cont311tit1 {
@@ -499,7 +511,7 @@
 
     .indic {
         position: absolute;
-        bottom: -100px;
+        bottom: -36px;
         right: 156px;
         z-index: 2;
         ;
@@ -507,37 +519,37 @@
 
     .banlink li:nth-child(1) {
         position: absolute;
-        top: 95px;
+        top: 38px;
         left: -90px;
     }
 
     .banlink li:nth-child(2) {
         position: absolute;
-        top: 85px;
+        top: 28px;
         left: 107px;
     }
 
     .banlink li:nth-child(3) {
         position: absolute;
-        top: 160px;
+        top: 108px;
         left: -90px;
     }
 
     .banlink li:nth-child(4) {
         position: absolute;
-        top: 160px;
+        top: 108px;
         left: 107px;
     }
 
     .banlink li:nth-child(5) {
         position: absolute;
-        top: 235px;
+        top: 188px;
         left: -90px;
     }
 
     .banlink li:nth-child(6) {
         position: absolute;
-        top: 235px;
+        top: 188px;
         left: 107px;
     }
 
@@ -608,7 +620,7 @@
     }
 
     .b1 {
-        height: 253px;
+        height: 314px;
     }
 
     .banlink li {
@@ -625,10 +637,19 @@
         color: #FFF;
     }
 
+    .cont {
+        height: 1550px;
+    }
 
+    .rbx::before {
+        content: "";
+        display: block;
+        padding-top: 10%;
+    }
 
-
-
+    #cont3 {
+        margin-top: 0px;
+    }
 
 
 
