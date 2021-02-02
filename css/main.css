@@ -14,7 +14,8 @@ body {
     background-color: #dee3e8;
 }
 
-ul,ol {
+ul,
+ol {
     list-style: none;
 }
 
@@ -59,38 +60,42 @@ ul,ol {
 }
 
 .projt img {
-    position: absolute;
+    /*    position: absolute;*/
     top: 0;
     width: 100%;
     /*트랜지션 : 속시이지*/
     transition: all .4s ease-in-out;
     margin: 0 auto;
-    
 }
 
-
-
-.projt a img {
+.projt a {
     top: 0%;
     left: 0%;
     transform: scale(.4);
     opacity: 0;
 }
 
+.projt a {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: block;
+    /*트랜지션 : 속시이지*/
+    transition: all .4s ease-in-out;
+}
+
 /*가운데 뒤*/
-.projt a:nth-child(1) img{
+.projt a:nth-child(1) {
     top: 0%;
     left: 0%;
     transform: scale(.1);
     opacity: 0;
     filter: grayscale(99%) blur(3px);
-    border-bottom: 10px solid #2d2f33;
-    padding-bottom: 5px;
 }
 
 /*가운데 뒤*/
 /*왼쪽*/
-.projt a:nth-child(2) img{
+.projt a:nth-child(2) {
     top: 0%;
     left: -73%;
     transform: scale(.3);
@@ -98,12 +103,10 @@ ul,ol {
     filter: grayscale(50%) blur(3px);
     z-index: 3;
     box-shadow: 3px 3px 3px #666;
-    border-bottom: 10px solid #2d2f33;
-    padding-bottom: 10px;
 }
 
 /*왼쪽*/
-.projt a:nth-child(3) img{
+.projt a:nth-child(3) {
     top: 0%;
     left: -127%;
     transform: scale(.6);
@@ -111,24 +114,53 @@ ul,ol {
     filter: grayscale(50%) blur(2px);
     z-index: 4;
     box-shadow: 3px 3px 3px #666;
-    border-bottom: 10px solid #2d2f33;
-    padding-bottom: 30px;
 }
 
 /*중앙*/
-.projt a:nth-child(4) img{
+.projt a:nth-child(4) {
     top: 0;
     left: 0;
     transform: scale(1);
     opacity: 1;
     filter: saturate(1.5);
     z-index: 5;
-    border-bottom: 10px solid #2d2f33;
-    padding-bottom: 40px;
+
 }
 
+/*그림자*/
+.projt a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    bottom: -37%;
+    background-image: radial-gradient(#666, #666 40%, rgba(102, 102, 102, 0) 70%);
+    /*
+                원형 그라데이션:
+                background-image: radial-gradient(색1 몇%, 색2 몇%, ...)
+            */
+    opacity: .5;
+    /*투명*/
+    transition: all .4s ease-in-out;
+}
+
+/*오버시 그림자*/
+.projt a:hover::before {
+    opacity: .8;
+    margin-bottom: -15%;
+    transition: all .4s ease-in-out;
+    
+}
+
+.projt img:hover  {
+    transition: all .4s ease-in-out;
+    transform: scale(1.2)
+}
+
+
 /*오른쪽*/
-.projt a:nth-child(5) img{
+.projt a:nth-child(5) {
     top: 0%;
     left: 127%;
     transform: scale(.6);
@@ -136,12 +168,10 @@ ul,ol {
     filter: grayscale(50%) blur(2px);
     z-index: 4;
     box-shadow: 3px 3px 3px #666;
-    border-bottom: 10px solid #2d2f33;
-    padding-bottom: 30px;
 }
 
 /*오른쪽*/
-.projt a:nth-child(6) img{
+.projt a:nth-child(6) {
     top: 0%;
     left: 73%;
     transform: scale(.3);
@@ -149,18 +179,14 @@ ul,ol {
     filter: grayscale(50%) blur(3px);
     z-index: 3;
     box-shadow: 3px 3px 3px #666;
-    border-bottom: 10px solid #2d2f33;
-    padding-bottom: 10px;
 }
 
-.projt a:nth-child(7) img{
+.projt a:nth-child(7) {
     top: 0%;
     left: 0%;
     transform: scale(.1);
     opacity: 0;
     filter: grayscale(99%) blur(3px);
-    border-bottom: 10px solid #2d2f33;
-    padding-bottom: 5px;
 }
 
 /*4. 이동버튼 셋팅*/
@@ -208,3 +234,4 @@ ul,ol {
     background-color: #002846;
     z-index: -1
 }
+
