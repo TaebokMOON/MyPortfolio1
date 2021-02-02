@@ -56,7 +56,7 @@ ol {
 }
 
 .imgbox {
-    display: inline-block;
+    display: block;
 }
 
 .projt img {
@@ -147,15 +147,16 @@ ol {
 
 /*오버시 그림자*/
 .projt a:hover::before {
-    opacity: .8;
+    opacity: .9;
     margin-bottom: -15%;
     transition: all .4s ease-in-out;
+    transform: scale(1.3)
     
 }
 
 .projt img:hover  {
     transition: all .4s ease-in-out;
-    transform: scale(1.2)
+    transform: scale(1.3)
 }
 
 
