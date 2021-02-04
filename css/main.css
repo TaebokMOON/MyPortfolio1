@@ -125,7 +125,8 @@ ol {
     content: "";
     display: block;
     position: absolute;
-    width: 100%;
+    left: -2%;
+    width: 104%;
     height: 20%;
     bottom: -37%;
     background-image: radial-gradient(#666, #666 40%, rgba(102, 102, 102, 0) 70%);
@@ -141,7 +142,7 @@ ol {
 /*오버시 그림자*/
 .projt a:hover::before {
     opacity: .9;
-    transform: scale(1);
+    transform: scale(.9);
     
     
     
