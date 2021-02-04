@@ -142,7 +142,7 @@ ol {
 /*오버시 그림자*/
 .projt a:hover::before {
     opacity: .9;
-    transform: scale(.9);
+    transform: scale(.8);
     
     
     
@@ -152,7 +152,8 @@ ol {
     margin-top: -100px;
     margin-bottom: 100px;
     transition: all .4s ease-in-out;
-    transform: scale(1.2)
+    transform: scale(1.2);
+    
    
     
 }
