@@ -1,5 +1,7 @@
 /*메인 css  main.css*/
 
+@import url(reset.css);
+
 html,
 body {
     margin: 0;
@@ -19,14 +21,7 @@ ol {
     list-style: none;
 }
 
-/*.rbx::before {
-    content: "";
-    display: block;
-    padding-top: 49%;
-    부모요소의 가로크기에 대한 패딩탑
-    높이값이 없는 부모요소에 높이값을 만들어줌
-    
-}*/
+
 
 .top {
     margin-top: 30px;
@@ -36,9 +31,7 @@ ol {
 }
 
 .tit {
-    position: absolute;
-    top: 0;
-    left: 3%;
+    margin-left: 5%;
     font-size: 40px;
     color: #e37e7e;
 }
@@ -154,7 +147,7 @@ ol {
     
 }
 
-.projt img:hover  {
+.projt a:hover img {
     transition: all .4s ease-in-out;
     transform: scale(1.3)
 }
