@@ -83,7 +83,7 @@ ol {
     left: 0%;
     transform: scale(.1);
     opacity: 0;
-    filter: grayscale(99%) blur(3px);
+/*    filter: grayscale(99%) blur(3px);*/
 }
 
 /*가운데 뒤*/
@@ -95,7 +95,7 @@ ol {
     opacity: 1;
     filter: grayscale(50%) blur(3px);
     z-index: 3;
-    box-shadow: 3px 3px 3px #666;
+/*    box-shadow: 3px 3px 3px #666;*/
 }
 
 /*왼쪽*/
@@ -106,7 +106,7 @@ ol {
     opacity: 1;
     filter: grayscale(50%) blur(2px);
     z-index: 4;
-    box-shadow: 3px 3px 3px #666;
+/*    box-shadow: 3px 3px 3px #666;*/
 }
 
 /*중앙*/
@@ -141,15 +141,19 @@ ol {
 /*오버시 그림자*/
 .projt a:hover::before {
     opacity: .9;
-    margin-bottom: -15%;
-    transition: all .4s ease-in-out;
-    transform: scale(1.3)
+    transform: scale(.8);
+    
+    
     
 }
 
-.projt a:hover img {
+.projt a:hover img{
+    margin-top: -80px;
+    margin-bottom: 80px;
     transition: all .4s ease-in-out;
-    transform: scale(1.3)
+    transform: scale(1.1)
+   
+    
 }
 
 
@@ -161,7 +165,7 @@ ol {
     opacity: 1;
     filter: grayscale(50%) blur(2px);
     z-index: 4;
-    box-shadow: 3px 3px 3px #666;
+/*    box-shadow: 3px 3px 3px #666;*/
 }
 
 /*오른쪽*/
@@ -172,7 +176,7 @@ ol {
     opacity: 1;
     filter: grayscale(50%) blur(3px);
     z-index: 3;
-    box-shadow: 3px 3px 3px #666;
+/*    box-shadow: 3px 3px 3px #666;*/
 }
 
 .projt a:nth-child(7) {
