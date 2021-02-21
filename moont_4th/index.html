@@ -27,70 +27,86 @@
                 <!--1-2 메뉴-->
                 <div class="gnb">
                     <nav class="nav">
-                        <ol class="gnblist">
+                        <ol class="gnblist gnbflex">
                             <li>
-                                <a href="">정보공개</a>
+                                <a href="" class="menulist">정보공개</a>
                             </li>
                             <li>
-                                <a href="">공단소개</a>
+                                <a href="" class="menulist">공단소개</a>
                             </li>
                             <li>
-                                <a href="">정보마당</a>
+                                <a href="" class="menulist">정보마당</a>
                             </li>
                             <li>
-                                <a href="">신·재생에너지</a>
+                                <a href="" class="menulist">신·재생에너지</a>
                             </li>
                             <li>
-                                <a href="">에너지효율향상</a>
+                                <a href="" class="menulist">에너지효율향상</a>
                             </li>
                             <li>
-                                <a href="">기후변화대응</a>
+                                <a href="" class="menulist">기후변화대응</a>
                             </li>
                             <li>
-                                <a href="">홍보교육마당</a>
+                                <a href="" class="menulist">홍보교육마당</a>
                             </li>
                             <li>
-                                <a href="">전자민원</a>
+                                <a href="" class="menulist">전자민원</a>
                             </li>
                         </ol>
                     </nav>
                 </div>
 
                 <!--1-3 검색버튼-->
-                <div class="sech ">
-
+                <div class="sech">
+                    <div>
+                        <a href="">
+                            <img src="images/sech.png" alt="">
+                        </a>
+                    </div>
                 </div>
             </div>
 
         </heder>
     </div>
-
-    <div class="rgnb">
+    <!--오른쪽 메뉴-->
+    <div id="rgnb">
         <nav class="rnav">
             <ol class="rgnblist">
                 <li>
-                    <img src="" alt="">
-                    <a href="">청렴자료실</a>
+                    <a href="">
+                        <img src="images/rgnb11.png" alt="청렴자료실" class="rgnb">
+                        <span class="menulist">청렴자료실</span>
+                    </a>
                 </li>
                 <li>
-                    <img src="" alt="">
-                    <a href="">사규(규정)</a>
+                    <a href="">
+                        <img src="images/rgnb12.png" alt="청렴자료실" class="rgnb">
+                        <span>사규(규정)</span>
+                    </a>
                 </li>
                 <li>
-                    <img src="" alt="">
-                    <a href="">제·개정 예고</a>
+                    <a href="">
+                        <img src="images/rgnb13.png" alt="청렴자료실" class="rgnb">
+                        <span>제·개정 예고</span>
+                    </a>
                 </li>
                 <li>
-                    <img src="" alt="">
-                    <a href="">입찰공고</a>
+                    <a href="">
+                        <img src="images/rgnb4.png" alt="청렴자료실" class="rgnb">
+                        <span class="rgnb4st">입찰공고</span>
+                    </a>
                 </li>
                 <li>
-                    <img src="" alt="">
-                    <a href="">수의계약현황</a>
+                    <a href="">
+                        <img src="images/rgnb10.png" alt="청렴자료실" class="rgnb">
+                        <span>수의계약현황</span>
+                    </a>
                 </li>
                 <li>
-                    <img src="" alt="">
-                    <a href="">지자체 감사결과</a>
+                    <a href="">
+                        <img src="images/rgnb9.png" alt="청렴자료실" class="rgnb">
+                        <span>지자체감사결과</span>
+                    </a>
                 </li>
             </ol>
         </nav>
@@ -101,24 +117,76 @@
     <!--1번페이지-->
     <div id="page">
         <div class="inbox">
-            <section id="pg1" class="page">
+            <section id="pg1" class="page1">
+                <!--1p.타이틀-->
+                <!--1p. 컨텐츠-->
+                <!--1. 배경비디오 넣기-->
+                <video id="myvid" src="images/videoplayback.mp4" autoplay muted loop></video>
 
             </section>
             <!--2번페이지-->
-            <section id="pg2" class="page">
-
+            <section id="pg2" class="page2 inbox rbx">
+                <div class="ibx">
+                    <!--제목 아이콘-->
+                    <div class="ptbox p2tbox">
+                        <img src="images/2page.png" alt="2페이지 이미지" class="p2img">
+                    </div>
+                    <!--타이틀-->
+                    <div class="ptit p2tit">
+                        <h2>
+                            <a href="">신·재생에너지</a>
+                        </h2>
+                    </div>
+                    <!--컨텐츠-->
+                </div>
             </section>
             <!--3번페이지-->
-            <section id="pg3" class="page">
-
+            <section id="pg3" class="page2 inbox rbx">
+                <div class="ibx">
+                    <!--제목 아이콘-->
+                    <div class="ptbox p3tbox">
+                        <img src="images/3page.png" alt="2페이지 이미지" class="p3img">
+                    </div>
+                    <!--타이틀-->
+                    <div class="ptit p3tit">
+                        <h2>
+                            <a href="">에너지 효율향상</a>
+                        </h2>
+                    </div>
+                    <!--컨텐츠-->
+                </div>
             </section>
             <!--4번페이지-->
-            <section id="pg4" class="page">
-
+            <section id="pg4" class="page2 inbox rbx">
+                <div class="ibx">
+                    <!--제목 아이콘-->
+                    <div class="ptbox p4tbox">
+                        <img src="images/4page.png" alt="2페이지 이미지" class="p4img">
+                    </div>
+                    <!--타이틀-->
+                    <div class="ptit p4tit">
+                        <h2>
+                            <a href="">기후변화 대응</a>
+                        </h2>
+                    </div>
+                    <!--컨텐츠-->
+                </div>
             </section>
             <!--5번페이지-->
-            <section id="pg5" class="page">
-
+            <section id="pg5" class="page2 inbox rbx">
+                <div class="ibx">
+                    <!--제목 아이콘-->
+                    <div class="ptbox p5tbox">
+                        <img src="images/5page.png" alt="2페이지 이미지" class="p5img">
+                    </div>
+                    <!--타이틀-->
+                    <div class="ptit p5tit">
+                        <h2>
+                            <a href="">홍보 교육마당</a>
+                        </h2>
+                    </div>
+                    <!--컨텐츠-->
+                </div>
             </section>
         </div>
     </div>
