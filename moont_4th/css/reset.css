@@ -37,7 +37,7 @@ ol::after, ul::after{
 }
 
 li {
-    float: left;
+   /* float: left;*/
 }
 
 a {
