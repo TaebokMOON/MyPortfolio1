@@ -34,12 +34,13 @@
 }
 
 .container_skitter {
-    width: 46.89vw ;
-    height: 23.8vw ;
+    width: 46.89vw;
+    height: 23.8vw
 }
+
 .image_main {
     width: 46.89vw;
-    height: 23.8vw;
+    height: 23.8vw
 }
 
 /* =Box clone
@@ -190,7 +191,7 @@
 -------------------------------------------------------------- */
 .box_skitter .info_slide_dots {
     position: absolute;
-    
+
     z-index: 151;
     padding: 5px 0 5px 5px;
     -moz-border-radius: 50px;
@@ -371,7 +372,7 @@
 -------------------------------------------------------------- */
 .box_skitter_large {
     width: 46.89vw;
-    height: 23.8vw;
+    height: 23.8vw
 }
 
 .box_skitter_small {
