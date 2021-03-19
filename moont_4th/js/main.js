@@ -217,7 +217,7 @@ $(function () {
         sleft = $(this).offset().left
         
         // 1.1 이하면  나가있는 px크기의 110%확장
-        if (sleft < -win * 1.1) {
+        if (sleft < -p4ban * 1.1) {
 
             // 왼쪾 이동 애니메이션 : -200%이동과 동일
             $(this).stop().animate({
@@ -233,9 +233,6 @@ $(function () {
 
                 // 광드래그 커버제거
                 prot.hide()
-
-                // 배너타이틀 등장함수 호출
-                banTit()
 
             }) ///// anmate후 함수 /////
 
@@ -263,8 +260,6 @@ $(function () {
                 // 광드래그 커버제거
                 prot.hide()
 
-                // 배너타이틀 등장함수 호출
-                banTit()
 
             }) ///// animate 후 함수
 
@@ -326,8 +321,6 @@ $(function () {
             // 광드래그 커버제거
             prot.hide()
 
-            // 배너타이틀 등장함수 호출
-            banTit()
 
         }) ///// anmate후 함수 /////
 

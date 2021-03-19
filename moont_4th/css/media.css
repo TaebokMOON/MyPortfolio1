@@ -1,0 +1,12 @@
+@charset "utf-8";
+/*메인 사이트 : 미디어 쿼리 - media.css*/
+
+/*1300px 이하미디어 쿼리*/
+@media only screen and (max-width:1300) {
+    .p2nbox1 {
+        height: 14vw;
+    }
+
+}
+
+/*미디어쿼리 - 1024이하*/
