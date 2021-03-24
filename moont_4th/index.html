@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/skitter.styles.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
     <script src="js/jquery-1.7.2.min.js"></script>
     <script src="js/jquery.easing.1.3.js"></script>
     <script src="js/jquery.animate-colors-min.js"></script>
@@ -17,8 +18,6 @@
     <script src="js/typed.min.js"></script>
     <script src="js/jquery-touch-punch.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/main2.js"></script>
-
     <script>
         $(function() {
 
@@ -59,8 +58,10 @@
                 auto: true, // 자동넘기기 설정(true/false)
                 pause: 3000, // 사이 간격
                 speed: 600, // 슬라이드 넘어가는 속도
-                mode: 'horizontal' // 넘기기 방식옵션
+                mode: 'horizontal',// 넘기기 방식옵션
                 // 'horizontal' , 'vertical' , 'fade'
+                slideWidth: 800,
+                minSlides: 1 
             })
 
 
@@ -210,13 +211,13 @@
             </section>
             <!--2번페이지-->
             <section id="pg2" class="page2 inbox rbx">
-                <div class="ibx">
+                <div class="ibx ">
                     <!--제목 아이콘-->
                     <div class="ptbox p2tbox">
-                        <img src="images/2page.png" alt="2페이지 이미지" class="p2img">
+                        <img src="images/2page.png" alt="2페이지 이미지" class="p2img ">
                     </div>
                     <!--타이틀-->
-                    <div class="ptit p2tit">
+                    <div class="ptit p2tit ptit900">
                         <h2>
                             <a href="">신·재생에너지</a>
                         </h2>
@@ -579,13 +580,15 @@
                             </li>
                         </ol>
                         <!--왼쪽이동버튼-->
-                        <a href="" class="p4btn lbtn">
+                       <!-- <a href="" class="p4btn lbtn">
                             <img src="images/btn_pre1.png" alt="왼쪽버튼">
-                        </a>
+                        </a>-->
                         <!--오른쪽이동버튼-->
+<!--
                         <a href="" class="4pbtn rbtn">
                             <img src="images/btn_nxt1.png" alt="오른쪽버튼">
                         </a>
+-->
 
 
                         <!--배너화면 보호막-->
@@ -623,7 +626,7 @@
                                 -->
                             </div>
                             <span>함께하는 똑똑한 에너지 사용, 깨끗하고 밝은 내일을 만듭니다!
-                                2018년 여름철 에너지절약 CF는 페이퍼아트로 꾸며보았습니다.페이퍼아트 작가 김예은님의 작품으로 만든 아기자기한 가전제품과 태양광패널, 지금 한 번 확인해 보시겠어요?^^</span>
+                                2018년 여름철 에너지절약 CF는 페이퍼아트로 꾸며보았습니다.페이퍼아트 작가 김예은님의 작품으로 만든 아기자기한 가전제품과 태양광패널, 지금 한 번 확인해 보시겠어요?</span>
                         </div>
                         <div class="mvbox2">
                             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/gILxSb4eJ14" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -646,7 +649,7 @@
                                     </ul>
                                 </li>
                                 <li class="group">
-                                    <div class="title">SESE나라</div>
+                                    <div class="title">SESE나라 </div>
                                     <ul class="sub">
                                         <li><a href="#">진로체럼교육</a></li>
                                         <li><a href="#">교육자료</a></li>
@@ -663,7 +666,7 @@
                                     </ul>
                                 </li>
                                 <li class="group">
-                                    <div class="title">에너지 기후변화전문교육</div>
+                                    <div class="title">에너지 기후변화전문교육 </div>
                                     <ul class="sub">
                                         <li><a href="#">교육과정</a></li>
                                         <li><a href="#">교육신청</a></li>
@@ -724,7 +727,8 @@
                 <li><a href="">이메일무단수닙거부</a></li>
                 <li><a href="">뷰어프로그램안내</a></li>
                 <li><a href="">본사/지역본부약도보기</a></li>
-                <li><a href="">홈페이지개선의</a>견</li>
+                <li><a href="">홈페이지개선의견</a></li>
+                <li class="brk"></li>
                 <li><a href="">RSS안내</a></li>
                 <li><a href="">사이트맵</a></li>
                 <li><a href="">원격지원</a> </li>
@@ -735,7 +739,7 @@
         <div class="flogo">
             <div class="floin">
                 <a href="">
-                    <img src="images/flogo.gif" alt="탑로고">
+                    <img src="images/flogo.gif" alt="아래로고">
                 </a>
             </div>
         </div>

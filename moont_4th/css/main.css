@@ -35,9 +35,8 @@ body {
 
 /* 메뉴 fixed 박스 */
 #top {
-    position: relative;
-    width: 100%;
     position: fixed;
+    width: 100%;
     /*border: 2px solid #4a4a4a;*/
     background-color: #ffffff;
     box-sizing: border-box;
@@ -328,7 +327,7 @@ body {
 
 .box_skitter .info_slide_dots {
     position: absolute;
-    top: 5%;
+    top: %;
     left: 0 !important;
     margin-left: 87%;
     z-index: 151;
@@ -451,6 +450,8 @@ body {
     height: 14vw;
     background-color: #779d7c;
     z-index: 10;
+    border: 5px double #0c1d0c;
+    box-sizing: border-box;
 }
 
 .p2nbox2 {
@@ -461,6 +462,8 @@ body {
     height: 14vw;
     background-color: #779d7c;
     z-index: 10;
+    border: 5px double #0c1d0c;
+    box-sizing: border-box;
 
 }
 

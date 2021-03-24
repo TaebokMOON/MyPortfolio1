@@ -16,7 +16,7 @@
 
 .bx-wrapper {
 	width: 20.6vw;
-	height: 15.5vw;
+	height: 16.5vw;
 	position: relative;
 	margin: 0 auto 60px;
 	padding: 0;
@@ -24,8 +24,8 @@
 }
 
 .bx-wrapper img {
-	width: 20.6vw;
-	height: 15.5vw;
+	width: 100%;
+	height: 100%;
 	display: block;
 }
 

@@ -1,12 +1,401 @@
 @charset "utf-8";
 /*메인 사이트 : 미디어 쿼리 - media.css*/
 
-/*1300px 이하미디어 쿼리*/
-@media only screen and (max-width:1300) {
-    .p2nbox1 {
-        height: 14vw;
+
+@media only screen and (max-width:1700px) {
+
+    #pg1 {
+        height: 56vw;
     }
+
 
 }
 
-/*미디어쿼리 - 1024이하*/
+/*1700px 미디어 쿼리*/
+
+
+/*900px이하미디어 쿼리*/
+@media only screen and (max-width:1024px) {
+
+    #pg2 {
+        height: 80vw;
+    }
+
+    #pg3 {
+        height: 100vw;
+    }
+
+    #pg4 {
+        height: 80vw;
+    }
+
+    #pg5 {
+        height: 100vw;
+    }
+
+    .ptit {
+        top: 0;
+        left: 54%;
+    }
+
+    .ptbox {
+        top: 3%;
+    }
+
+    .p2tbox {
+        left: 20%;
+        width: 20%;
+    }
+
+    .p3tbox {
+        left: 3%;
+    }
+
+    .p4tbox {
+        left: 13%;
+    }
+
+    .p5tbox {
+        left: 18%;
+    }
+
+    /************************2페이지**************************/
+
+    .ptit a {
+        font-size: 6vw;
+    }
+
+    .box_skitter {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .box_skitter .prev_button {
+        top: 58%;
+    }
+
+    .box_skitter .next_button {
+        top: 58%;
+    }
+
+    .box_skitter {
+        position: absolute;
+        top: -10%;
+        left: 35%;
+        transform: translateX(-50%);
+        min-width: 70vw;
+        min-height: 35vw;
+        width: 46.89vw;
+        height: 23.8vw;
+    }
+
+    .p2bantit {
+        top: 6%;
+        left: 48%;
+    }
+
+    .bx-wrapper {
+        position: absolute;
+        top: 147%;
+        left: -40%;
+    }
+
+    .p2bg {
+        top: 111%;
+    }
+
+    .p2icfelx {
+        top: 194.3%;
+        left: 32%;
+    }
+    
+    .p2ic {
+        width: 8vw;
+        height: 8vw;
+    }
+
+    /**********************3페이지****************************/
+
+    .p2nbox1 {
+        top: 117%;
+        left: 2%;
+        width: 33vw;
+        height: 26vw;
+    }
+
+    .p2nbox2 {
+        top: 117%;
+        left: 52%;
+        width: 33vw;
+        height: 26vw;
+    }
+
+    .p2boxtit {
+        font-size: 3vw;
+    }
+
+    .p2boxli {
+        font-size: 1.5vw;
+    }
+
+    .p3bg {
+        position: absolute;
+        top: 70%;
+        left: 7%;
+        width: 62vw;
+        height: 42vw;
+        margin-top: 13%;
+    }
+
+    .p3icfelx {
+        top: 117%;
+        left: 50%;
+        width: 60vw;
+        height: 5vw;
+        margin-top: 37%;
+    }
+
+    .p3icfelx li a img {
+        width: 6vw;
+        height: 6vw;
+    }
+
+    .p3icfelx li a span {
+        font-size: 1.4vw;
+    }
+
+    /************************4페이지**************************/
+
+    #p4box {
+        top: 4%;
+        left: 0%;
+        width: 100vw;
+        height: 63vw;
+    }
+
+    .pg4p1box {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 26vw;
+        height: 47vw;
+        /*outline: 1px solid red;*/
+        z-index: 10;
+        transition: all 2s;
+
+    }
+
+    .pg4p2box {
+        position: absolute;
+        top: 5%;
+        left: 45%;
+        transform: translateX(-50%);
+        width: 26vw;
+        height: 47vw;
+        /*outline: 1px solid green;*/
+        z-index: 10;
+        transition: scale 2s;
+    }
+
+    .pg4p3box {
+        position: absolute;
+        top: 5%;
+        left: 59%;
+        width: 26vw;
+        height: 47vw;
+        /* outline: 1px solid blue;*/
+        z-index: 10;
+        transition: all 2s;
+    }
+
+    .pg6bg {
+        top: 15%;
+        left: 8%;
+        width: 57vw;
+        height: 38vw;
+    }
+
+    .pg1bg {
+        top: 15%;
+        left: 18%;
+        width: 60vw;
+        height: 45vw;
+    }
+
+    .pg2bg {
+        top: 15%;
+        left: 26%;
+        width: 64vw;
+        height: 46vw;
+    }
+
+    .pg3bg {
+        top: 13%;
+        left: 6%;
+        width: 70vw;
+        height: 40vw;
+    }
+
+    .pg4bg {
+        top: 20%;
+        left: 3%;
+        width: 70vw;
+        height: 45vw;
+    }
+
+    .pg5bg {
+        top: -1%;
+        left: 15%;
+        width: 60vw;
+        height: 62vw;
+    }
+
+
+
+
+
+    .indic {
+        left: 44.8%;
+    }
+
+
+    /********************5페이지*************************/
+
+    .p5img {
+        width: 79%;
+    }
+
+    .p5tbox {
+        top: 0;
+    }
+
+    .p5box {
+        position: relative;
+        top: 2%;
+        left: 10%;
+
+    }
+
+    .mvbox1 {
+        position: relative;
+        top: 4%;
+        left: 0%;
+        width: 45vw;
+        height: 25vw;
+    }
+
+    .mvtex1 {
+        position: absolute;
+        top: 89%;
+        left: 5%;
+        width: 55%;
+        font-size: 1.6vw;
+        z-index: 1;
+        color: #fff;
+        text-shadow: 1px 1px 1px #242323;
+    }
+
+    .mvbox2 {
+        position: relative;
+        top: 69%;
+        left: 0%;
+        width: 45vw;
+        height: 25vw;
+    }
+
+    .mvtex2 {
+        position: absolute;
+        top: 238%;
+        left: 5%;
+        width: 55%;
+        font-size: 1.6vw;
+    }
+
+    .p5bg {
+        position: absolute;
+        top: 23%;
+        left: 13%;
+        width: 65vw;
+        height: 74vw;
+
+    }
+
+    .p5gnb {
+        position: absolute;
+        top: 13%;
+        right: 0%;
+        width: 26vw;
+        height: 65vw;
+        z-index: 10;
+    }
+
+    .p5gnb ul#navi {
+        top: 26%;
+    }
+
+    .p5gnb div.title {
+        height: 5vw;
+        font-size: 1.5vw;
+    }
+
+    .p5gnb ul.sub li {
+        height: 4vw;
+        font-size: 1.3vw;
+    }
+
+    .p5gnb ul#navi {
+        text-indent: 0px;
+    }
+
+    /*********************하단*********************/
+
+    .foot {
+        height: 30vw;
+    }
+
+    #info {
+        top: 9%;
+        width: 95vw;
+    }
+
+    .info {
+        top: 0;
+        height: 0;
+
+        /*flex 랩핑!!!*/
+        flex-wrap: wrap;
+
+        /*수평간격일정*/
+        justify-content: space-around;
+        /*여러줄일떄 수직간격은?????*/
+        align-content: center;
+    }
+
+    .fban {
+        height: 13%;
+    }
+
+    .flogo {
+        top: 46%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 23vw;
+    }
+
+    .info li {
+        font-size: 1.4vw;
+    }
+
+    .add {
+        top: 75%;
+        left: 50%;
+        transform: translateX(-32%);
+        width: 100%;
+    }
+
+    .add span {
+        font-size: 1.3vw;
+    }
+
+    /*미디어쿼리 - 900px*/
