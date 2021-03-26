@@ -6,6 +6,7 @@
 
     #pg1 {
         height: 56vw;
+        margin-top: 70px;
     }
 
 
@@ -16,6 +17,17 @@
 
 /*900px이하미디어 쿼리*/
 @media only screen and (max-width:1024px) {
+
+
+    html,
+    body {
+        width: 100vw;
+        height: auto;
+    }
+
+    #pg1 {
+        margin-top: 70px;
+    }
 
     #pg2 {
         height: 80vw;
@@ -71,6 +83,11 @@
         left: 0;
     }
 
+    .bx-wrapper {
+        width: 28vw;
+        height: 27vw;
+    }
+
     .box_skitter .prev_button {
         top: 58%;
     }
@@ -107,9 +124,9 @@
 
     .p2icfelx {
         top: 194.3%;
-        left: 32%;
+        left: 26%;
     }
-    
+
     .p2ic {
         width: 8vw;
         height: 8vw;
@@ -169,15 +186,15 @@
 
     #p4box {
         top: 4%;
-        left: 0%;
-        width: 100vw;
+        left: 2%;
+        width: 87vw;
         height: 63vw;
     }
 
     .pg4p1box {
         position: absolute;
         top: 5%;
-        left: 5%;
+        left: 4%;
         width: 26vw;
         height: 47vw;
         /*outline: 1px solid red;*/
@@ -189,7 +206,7 @@
     .pg4p2box {
         position: absolute;
         top: 5%;
-        left: 45%;
+        left: 50%;
         transform: translateX(-50%);
         width: 26vw;
         height: 47vw;
@@ -201,7 +218,7 @@
     .pg4p3box {
         position: absolute;
         top: 5%;
-        left: 59%;
+        left: 66%;
         width: 26vw;
         height: 47vw;
         /* outline: 1px solid blue;*/
@@ -352,6 +369,7 @@
 
     .foot {
         height: 30vw;
+        overflow: visible
     }
 
     #info {
@@ -390,12 +408,238 @@
     .add {
         top: 75%;
         left: 50%;
-        transform: translateX(-32%);
-        width: 100%;
+        transform: translateX(-50%);
+        width: 90vw;
+        text-align: center;
     }
 
     .add span {
         font-size: 1.3vw;
     }
 
-    /*미디어쿼리 - 900px*/
+    /*미디어쿼리 - 1024*/
+
+
+    @media only screen and (max-width:500px) {
+
+        html,
+        body {
+            overflow-x: hidden;
+            overflow-y: scroll;
+            width: 100vw;
+        }
+
+        body > * {}
+
+        #top {
+            width: 100%;
+        }
+
+        .gnb {
+            display: none;
+        }
+
+        .tloin {
+            position: absolute;
+            left: 50%;
+            width: 200%;
+        }
+
+        #pg1 {
+            margin-top: 70px;
+            height: 54vw;
+        }
+
+        .sech img {
+            left: -20%;
+        }
+
+        #rgnb {
+            right: 1%;
+        }
+
+
+        /************************2페이지***********************/
+        #pg2 {
+            height: 126vw;
+        }
+
+        .p2bg {
+            top: 111%;
+            left: -45.3%;
+            height: 69vw;
+
+        }
+
+
+        .p2bantit {
+            top: 12%;
+            left: 39%;
+        }
+
+        .p2bantit {
+            height: 11vw;
+        }
+
+        .box_skitter {
+            position: absolute;
+            top: -10%;
+            left: 24%;
+
+            min-width: 76vw;
+            min-height: 38vw;
+            width: 46.89vw;
+            height: 23.8vw;
+        }
+
+        .bx-wrapper {
+            position: absolute;
+            top: 167%;
+            left: -30%;
+        }
+
+        .bx-wrapper {
+            width: 50vw;
+            height: 48vw;
+        }
+
+        .p2icfelx {
+            top: 365%;
+            left: -35%;
+            width: 60vw;
+        }
+
+        /************************3페이지************************/
+
+        #pg3 {
+            height: 116vw;
+        }
+
+        .p3bg {
+            left: -4%;
+            height: 56vw;
+            width: 74vw;
+        }
+
+
+        .p3icfelx {
+            top: 160%;
+            left: 45%;
+            width: 76vw;
+        }
+
+        .p2nbox1 {
+            top: 127%;
+            left: -9%;
+            width: 37vw;
+            height: 35vw;
+        }
+
+        .p2nbox2 {
+            top: 127%;
+            left: 43%;
+            width: 37vw;
+            height: 35vw;
+        }
+
+
+
+        /***********************4페이지****************************/
+
+        .pg4p1box {
+            left: 0%;
+        }
+
+        .pg4p2box {
+            left: 50%;
+
+        }
+
+        .pg4p3box {
+            left: 67%;
+        }
+
+        #p4box {
+            width: 85vw;
+        }
+
+        #p4box {
+            width: 79vw;
+        }
+
+
+
+        /***************************5페이지*****************************/
+
+        #pg5 {
+            height: 195vw;
+        }
+
+        .p5bg {
+            left: 5%;
+            width: 72vw;
+            height: 100vw;
+        }
+
+        .p5gnb {
+            top: 382%;
+            left: -16%;
+            width: 56vw;
+            height: 61vw;
+        }
+
+        .p5gnb div.title {
+            height: 7vw;
+            font-size: 1.5vw;
+        }
+
+        .mvbox1 {
+            left: -11%;
+            width: 78vw;
+            height: 44vw;
+
+        }
+
+        .mvtex1 {
+            top: 156%;
+            left: -3%;
+            width: 67vw;
+        }
+
+        .mvbox2 {
+            top: 51%;
+            left: -11%;
+            width: 78vw;
+            height: 44vw;
+        }
+
+        .mvtex2 {
+            top: 350%;
+            left: -3%;
+            width: 67vw;
+        }
+
+        .p5gnb ul#navi {
+            top: 8%;
+        }
+
+
+        .flogo {
+            top: 51%;
+        }
+
+        .foot {
+            height: 47vw;
+            overflow-y: visible;
+        }
+
+
+
+
+
+
+
+
+    }
+
+    /*미디어 쿼리 500*/
