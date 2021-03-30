@@ -207,8 +207,8 @@
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50%;
-    width: 0.8vw;
-    height: 0.8vw;
+    width: 1vw;
+    height: 1vw;
     text-indent: -9999em;
     overflow: hidden;
 }

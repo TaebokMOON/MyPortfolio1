@@ -107,6 +107,22 @@
         height: 23.8vw;
     }
 
+    .box_skitter .next_button {
+        width: 3.2vw;
+        height: 3.2vw;
+    }
+
+    .box_skitter .prev_button {
+        width: 3.2vw;
+        height: 3.2vw;
+    }
+
+    .box_skitter .info_slide_dots .image_number {
+        width: 1.4vw;
+        height: 1.4vw;
+    }
+
+
     .p2bantit {
         top: 6%;
         left: 48%;
@@ -130,6 +146,21 @@
     .p2ic {
         width: 8vw;
         height: 8vw;
+    }
+
+    .boxmore img {
+        width: 3vw;
+    }
+
+    .bx-wrapper .bx-pager {
+        position: absolute;
+        top: -1.5vw;
+        left: -29%;
+    }
+
+    .bx-wrapper .bx-pager.bx-default-pager a {
+        width: 1vw;
+        height: 1vw;
     }
 
     /**********************3페이지****************************/
@@ -389,7 +420,7 @@
         /*여러줄일떄 수직간격은?????*/
         align-content: center;
     }
-    
+
     .gbox {
         position: relative;
         width: 9vw;
@@ -404,7 +435,7 @@
     .lb {
         left: 5%;
     }
-    
+
     .rb {
         right: 5%;
     }
@@ -475,7 +506,7 @@
             width: 100vw;
         }
 
-        body > * {}
+        body>* {}
 
         #top {
             width: 100%;
@@ -562,6 +593,11 @@
             height: 48vw;
         }
 
+        .box_skitter .info_slide_dots .image_number {
+            width: 2vw;
+            height: 2vw;
+        }
+
         .p2icfelx {
             /* flex: none;
             float: none; */
@@ -571,6 +607,23 @@
             height: 46vw;
             flex-wrap: wrap;
         }
+
+        .bx-wrapper .bx-controls-direction a  {
+            width: 3vw;
+            height: 3vw;
+        }
+
+        .bx-wrapper .bx-pager.bx-default-pager a {
+            width: 1.8vw;
+            height: 1.8vw;
+        }
+
+        .bx-wrapper .bx-pager {
+            position: absolute;
+            top: -2.5vw;
+            left: -34%;
+        }
+        
 
         /************************3페이지************************/
 
@@ -608,6 +661,10 @@
             left: 43%;
             width: 37vw;
             height: 35vw;
+        }
+
+        .boxmore img {
+            width: 4vw;
         }
 
 
@@ -650,6 +707,7 @@
         .swiper-button-prev {
             display: none;
         }
+
         /***************************5페이지*****************************/
 
         #pg5 {
@@ -661,11 +719,11 @@
             width: 72vw;
             height: 100vw;
         }
-        
+
         .p5tit {
             top: 0%;
         }
-        
+
         .p5tbox {
             left: 10%;
         }
