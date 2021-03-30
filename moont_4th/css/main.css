@@ -170,7 +170,7 @@ body {
 /*오른쪽 메뉴*/
 #rgnb {
     position: fixed;
-    top: 80px;
+    top: 350px;
     right: 1%;
     width: 5%;
     min-width: 70px;
