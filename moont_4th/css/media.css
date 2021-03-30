@@ -389,6 +389,25 @@
         /*여러줄일떄 수직간격은?????*/
         align-content: center;
     }
+    
+    .gbox {
+        position: relative;
+        width: 9vw;
+        margin: 0 auto;
+    }
+
+    .abtn img {
+        width: 2vw;
+        vertical-align: 7px;
+    }
+
+    .lb {
+        left: 5%;
+    }
+    
+    .rb {
+        right: 5%;
+    }
 
     .fban {
         height: 13%;
@@ -417,7 +436,34 @@
         font-size: 1.3vw;
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /*미디어쿼리 - 1024*/
+
 
 
     @media only screen and (max-width:500px) {
@@ -597,8 +643,13 @@
             width: 79vw;
         }
 
+        .swiper-button-next {
+            display: none;
+        }
 
-
+        .swiper-button-prev {
+            display: none;
+        }
         /***************************5페이지*****************************/
 
         #pg5 {
@@ -678,6 +729,14 @@
         .foot {
             height: 47vw;
             overflow-y: visible;
+        }
+
+        .gbox {
+            width: 18.2vw;
+        }
+
+        .abtn {
+            display: none;
         }
 
 

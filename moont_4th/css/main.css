@@ -170,7 +170,7 @@ body {
 /*오른쪽 메뉴*/
 #rgnb {
     position: fixed;
-    top: 350px;
+    top: 300px;
     right: 1%;
     width: 5%;
     min-width: 70px;
@@ -913,6 +913,8 @@ body {
     color: #fff;
     text-shadow: 1px 1px 1px #242323;
 }
+
+
 
 /*
 .type-wrap{
