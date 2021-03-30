@@ -63,19 +63,19 @@
 
             var chgImg = function(dir) { //dir - 방향 (0-왼쪽, 1-오른쪽)
 
-                console.log("광클1:" + prot);
+                // console.log("광클1:" + prot);
 
                 // 0. 광클금지
                 if (prot) return false; //돌아가
                 // port === 1 이면 도아가
                 prot = 1; //상태값 1로 변경!!
 
-                console.log("광클2:" + prot);
+                // console.log("광클2:" + prot);
 
                 // 작동시간 후에 광클선택값을 0으로 풀어주기
                 setTimeout(function() {
                     prot = 0; //상태풀기
-                    console.log("광풀3:" + prot);
+                    // console.log("광풀3:" + prot);
                 }, 400);
                 // setTimeout(함수,시간) - 설정시간 후 한번 함수호출!!
                 // 시간이 400이면 0.4초간 이므로 넘어가는 트랜지션 시간이 0.4초이므로 광클을 막아준다

@@ -23,7 +23,7 @@
     <script src="js/jquery.scroll-reveal.js"></script>
     <script src="js/main.js"></script>
     <script>
-        $(function() {
+        $(function () {
 
 
             // 스키터(skitter) 플러그인
@@ -78,7 +78,7 @@
 
             // 상위 메뉴(.title)가 클릭되면 그다음 요소인 하위메뉴가 slideDown하여 보이고 나머지 다른 메뉴의 하위메뉴는 slideUp하여 숨기기
             // 대상 : . title
-            $('.title').click(function() {
+            $('.title').click(function () {
 
                 $(this).next() // 서브메뉴
                     .slideToggle(300)
@@ -89,8 +89,8 @@
 
             }) ///// click /////
 
-            
-            
+
+
 
 
         }) //// jQB //////////////////////////////////
@@ -109,17 +109,17 @@
 
         .js-reveal--hidden {
             opacity: 0;
-            transform: translateY(-500px)
+            transform: translateY(-300px)
         }
 
         .js-reveal2--hidden {
             opacity: 0;
-            transform: translateX(-500px);
+            transform: translateX(-300px);
         }
 
         .js-reveal3--hidden {
             opacity: 0;
-            transform: translateX(500px);
+            transform: translateX(300px);
         }
     </style>
 
@@ -310,6 +310,7 @@
                                 </li>
                             </ul>
                             <div class="p2bg js-reveal2"></div>
+                            <div class="p21bg js-reveal2"></div>
                             <div class="p2icon">
                                 <ul class="p2icfelx js-reveal">
                                     <li>
@@ -603,7 +604,10 @@
                     <div class="p5box">
 
                         <div class="mvbox1 js-reveal3">
-                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/hNKL7a7zHCY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video1"></iframe>
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/hNKL7a7zHCY"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen class="video1"></iframe>
                         </div>
                         <div class="mvtex1 js-reveal2">
                             <div class="type-wrap">
@@ -615,13 +619,18 @@
                                 -->
                             </div>
                             <span>함께하는 똑똑한 에너지 사용, 깨끗하고 밝은 내일을 만듭니다!
-                                2018년 여름철 에너지절약 CF는 페이퍼아트로 꾸며보았습니다.페이퍼아트 작가 김예은님의 작품으로 만든 아기자기한 가전제품과 태양광패널, 지금 한 번 확인해 보시겠어요?</span>
+                                2018년 여름철 에너지절약 CF는 페이퍼아트로 꾸며보았습니다.페이퍼아트 작가 김예은님의 작품으로 만든 아기자기한 가전제품과 태양광패널, 지금 한 번 확인해
+                                보시겠어요?</span>
                         </div>
                         <div class="mvbox2 js-reveal2">
-                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/gILxSb4eJ14" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/gILxSb4eJ14"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
                         <div class="mvtex2 js-reveal3">
-                            <span>한국형 RE100 (K-RE100) 온라인 설명회"는 유튜브 라이브 영상으로 약 5분 가량 대기시간이 있습니다. 설명회 영상을 바로 보시려면 05:00부터 보시면 됩니다. </span>
+                            <span>한국형 RE100 (K-RE100) 온라인 설명회"는 유튜브 라이브 영상으로 약 5분 가량 대기시간이 있습니다. 설명회 영상을 바로 보시려면 05:00부터
+                                보시면 됩니다. </span>
                         </div>
                         <div class="p5gnb js-reveal2">
                             <ul id="navi">
@@ -739,4 +748,6 @@
         </div>
     </footer>
 
-</body></html>
+</body>
+
+</html>

@@ -458,19 +458,32 @@
             right: 1%;
         }
 
+        .ptit a {
+            font-size: 7vw;
+        }
+
 
         /************************2페이지***********************/
         #pg2 {
-            height: 126vw;
+            height: 113vw;
         }
 
         .p2bg {
             top: 111%;
             left: -45.3%;
-            height: 69vw;
-
+            height: 58vw;
         }
 
+        .p2tbox {
+            left: 12%;
+            width: 28%;
+            ;
+        }
+
+        .ptit {
+            top: 2%;
+            left: 51%;
+        }
 
         .p2bantit {
             top: 12%;
@@ -495,7 +508,7 @@
         .bx-wrapper {
             position: absolute;
             top: 167%;
-            left: -30%;
+            left: -56%;
         }
 
         .bx-wrapper {
@@ -504,9 +517,13 @@
         }
 
         .p2icfelx {
-            top: 365%;
-            left: -35%;
-            width: 60vw;
+            /* flex: none;
+            float: none; */
+            top: 162%;
+            left: 75%;
+            width: 2vw;
+            height: 46vw;
+            flex-wrap: wrap;
         }
 
         /************************3페이지************************/
@@ -521,6 +538,11 @@
             width: 74vw;
         }
 
+        .p3img {
+            position: relative;
+            left: 14%;
+            width: 61%;
+        }
 
         .p3icfelx {
             top: 160%;
@@ -546,24 +568,32 @@
 
         /***********************4페이지****************************/
 
+        #pg4 {
+            height: 83vw;
+        }
+
         .pg4p1box {
             left: 0%;
         }
 
         .pg4p2box {
             left: 50%;
+        }
 
+        .p4img {
+            position: relative;
+            left: -26%;
+            width: 27vw;
         }
 
         .pg4p3box {
             left: 67%;
         }
 
-        #p4box {
-            width: 85vw;
-        }
 
         #p4box {
+            top: 5%;
+            left: 1.5%;
             width: 79vw;
         }
 
@@ -572,7 +602,7 @@
         /***************************5페이지*****************************/
 
         #pg5 {
-            height: 195vw;
+            height: 220vw;
         }
 
         .p5bg {
@@ -580,12 +610,29 @@
             width: 72vw;
             height: 100vw;
         }
+        
+        .p5tit {
+            top: 0%;
+        }
+        
+        .p5tbox {
+            left: 10%;
+        }
 
         .p5gnb {
-            top: 382%;
+            top: 410%;
             left: -16%;
             width: 56vw;
-            height: 61vw;
+            height: 76vw;
+        }
+
+        .p5gnb ul.sub li {
+            height: 6vw;
+            font-size: 1.3vw;
+        }
+
+        .p5img {
+            width: 96%;
         }
 
         .p5gnb div.title {
@@ -607,14 +654,14 @@
         }
 
         .mvbox2 {
-            top: 51%;
+            top: 71%;
             left: -11%;
             width: 78vw;
             height: 44vw;
         }
 
         .mvtex2 {
-            top: 350%;
+            top: 368%;
             left: -3%;
             width: 67vw;
         }
