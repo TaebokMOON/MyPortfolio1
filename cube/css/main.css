@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @charset "utf-8";
 /* 세계의 도시 메인페이지 CSS - main.css */
 
@@ -262,3 +263,269 @@ body {
 
 
 
+=======
+@charset "utf-8";
+/* 세계의 도시 메인페이지 CSS - main.css */
+
+ @import url('https://fonts.googleapis.com/css?family=Black+And+White+Picture|East+Sea+Dokdo|Jua&display=swap');
+        /*
+            font-family: 'Black And White Picture', sans-serif;
+            font-family: 'East Sea Dokdo', cursive;
+            font-family: 'Jua', sans-serif;
+        
+        */
+
+html,body {
+    margin: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, #ce7070 30%, #7077ce 70%);
+}
+
+/* 1. 전체 제목*/
+.tit {
+    text-align: center;
+    margin-top: -20px;
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 230px;
+    color: #2f2f2f;
+    background: url(../images/korea3.png) no-repeat  center/auto ;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+/* 2. 메뉴*/
+.korea {
+    position: fixed;
+    top: 200px;
+    right: 50px;
+}
+
+.korea ul {
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    /*원근설정(원근대상의 부모에 준다!!*/
+    perspective: 480px;
+    
+}
+
+.korea li {
+    height: 100px;
+    background-image: linear-gradient(to right, transparent, #1a317e);
+    /*transparent는 투명을 지칭하는 키워드(만약 이 키워드 대신 쓸수있는것은 rgba로 투명만들기를 할수있음*/
+    
+    /*트랜스폼 회전축 기준변경*/
+    transform-origin: left;    
+    /*트랜지션 : 속시이지*/
+    transition: transform .4s ease-out;
+}
+
+
+
+.korea li:nth-child(4) {
+    background-image: linear-gradient(to right, transparent, #7e1a1a);
+}
+.korea li:nth-child(5) {
+   background-image: linear-gradient(to right, transparent, #7e1a1a);
+}
+.korea li:nth-child(6) {
+   background-image: linear-gradient(to right, transparent, #7e1a1a);
+}
+
+/*마우스 오버시*/
+.korea li:hover {
+    background-image: linear-gradient(to right, transparent, #ffffff);
+    transform: rotateY(-15deg);
+}
+
+
+
+.korea a {
+    display: block;
+    /*디자인 적용을 위해*/
+    width: 100%;
+    height: 100%;
+    font: bold 52px/100px 'East Sea Dokdo', cursive;
+    text-decoration: none;
+    text-align: center;
+    color: #3c3c3c;
+}
+
+/* 3. 큐브박스*/
+.cube {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    transform: translate(-50%,-50%) rotateX(0deg) rotateY(0deg);
+    
+    /*입체설정*/
+    transform-style: preserve-3d;
+   /* outline: 2px solid black;*/
+}
+
+/*큐브 각면 공통*/
+.cube>span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+}
+/*큐브 각면 따로따로 하기*/
+/*앞면: 시작면*/
+.cube>span:nth-child(1){
+    background: url(../images/kor6.png) no-repeat center/cover;
+    transform: translateZ(200px);
+}
+/*오른쪽면:국가옥쇄 */
+.cube>span:nth-child(2){
+    background: url(../images/kor5.jpg) no-repeat center/cover;
+    transform: rotateY(90deg) translateZ(200px);
+}
+/*뒷면:무궁화*/
+.cube>span:nth-child(3){
+    background: url(../images/kor3.jpg) no-repeat center/cover;
+    transform: rotateY(180deg) translateZ(200px);
+}
+/*왼쪽면:국가문장*/
+.cube>span:nth-child(4){
+    background: url(../images/kor4.jpg) no-repeat center/cover;
+    transform: rotateY(-90deg) translateZ(200px);
+}
+/*윗면: 태극기*/
+.cube>span:nth-child(5){
+    background: url(../images/kor1.jpg) no-repeat center/cover;
+    transform: rotateX(90deg) translateZ(200px);
+}
+/*아랫면:애귝가 */
+.cube>span:nth-child(6){
+    background: url(../images/kor2.jpg) no-repeat center/cover;
+    transform: rotateX(-90deg) translateZ(200px);
+}
+
+/*상징물들 설명박스*/
+.ebox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 400px;
+    
+    /*글자설정*/
+    font-family: 'Jua',sans-serif;
+    color: #fff;
+    text-shadow: 0 0 1px #000;
+    
+    opacity: 0;
+    /*처음에 안보이게*/
+}
+
+/*개별상징물 박스*/
+.etxt{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 3px solid #fff;
+    text-shadow: 2px 2px 2px #333;
+}
+
+/*상징물*/
+.etxt h2{
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 50px;
+    color: rgb(189, 182, 253)
+}
+/*상징물 설명*/
+.etxt p{
+    width: 100%;
+    height: calc(100% - 100px);
+    /*
+        높이값 계산해서 넣기
+        calc(%수치 - px수치)
+        -주의: 빼기기호 앞뒤에 띄어쓰기
+    */
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 28px;
+    color: rgb(255, 179, 179);
+    
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#emb {
+    text-shadow: 2px 2px 2px #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 260bf00610309261441203d3d8d67a556327dbab
