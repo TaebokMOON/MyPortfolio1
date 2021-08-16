@@ -1342,13 +1342,13 @@ dd:hover {
 /*컨텐츠 두번째 박스 테스트*/
 .cont312boxtxt {
     position: relative;
-    left: 11.3%;
+    left: -14.7%;
     font-size: 0.9375rem;
     color: #888;
     line-height: 21px;
     font-family: "맑은 고딕";
     letter-spacing: -2.4px;
-    margin-top: 4.3%;
+    margin-top: 23%;
 }
 
 /*컨텐츠 두번째 속박스*/
