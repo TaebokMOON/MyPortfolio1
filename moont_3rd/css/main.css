@@ -386,7 +386,7 @@ body {
 
 }
 
-. dl {
+dl {
     float: left;
 
 }
@@ -628,7 +628,7 @@ dd:hover {
     top: 34%;
     left: 5%;
     color: #024da1;
-    letter-spacing: -3.8px;
+    letter-spacing: -0.8px;
     font-size: 0.875rdm
 }
 
