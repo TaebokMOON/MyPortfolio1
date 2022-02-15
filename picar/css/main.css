@@ -1,0 +1,328 @@
+@charset "utf-8";
+/*메인 CSS - main.css*/
+
+/*외부 CSS파일 합치기*/
+@import url(core.css);
+@import url(reset.css);
+
+
+html, body {
+  overflow: hidden;
+  width: 375px;
+  height: 812px;
+}
+
+bocy {
+ position: relative;
+}
+
+.all {
+  width: 375px;
+  height: 812px;
+  overflow: hidden;
+  /* border: 1px solid red; */
+  margin: 0 auto;
+  /* background-color: #f5f4f2; */
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.top {
+  width: 375px;
+  height: 60px;
+  /* border : 1px solid red; */
+  padding: 15px 0 17px 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.gnb {
+  width: 337px;
+  height: 29px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.gnb ul {
+  display: flex;
+}
+
+.gnb li {
+  margin-left: 4px;
+}
+
+.gnb li span{
+  color: #bfbfbf;
+  flex-grow: 1;
+}
+
+.gnb li:nth-child(1) span {
+  color: #292929;
+}
+
+.gnb li:nth-child(2){
+  margin-left: 0;
+}
+
+
+
+
+main {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  -ms-overflow-style: none;
+}
+
+main::-webkit-scrollbar {
+  display: none;
+  width: 0 !important;
+}
+
+.wrap {
+  display: flex;
+  flex-grow: 1;
+}
+
+.page {
+  min-height: 100%;
+  background-color: #f5f4f2;
+}
+
+.page_s {
+  min-height: 812px;
+}
+
+.main_mbox{
+  width: 375px;
+  height: 222px;
+  /* border: 1px solid red; */
+  padding: 18px;
+  box-sizing: border-box;
+  margin-top: 8px;
+  background-color: #fff;
+}
+
+.main_box {
+  width: 339px;
+  height: 186px;
+  /* border: 1px solid black; */
+}
+
+.main_nav {
+  min-width: 290px;
+  height: 24px;
+  display: flex;
+  flex-grow: 1;
+  position: relative;
+  /* border: 1px solid red; */
+  /* display: inline-block */
+}
+
+.main_imgbox {
+  width: 24px;
+  height: 24px;
+}
+
+.main_img {
+  width: 24px;
+  height: 24px;
+}
+
+.main_img img{
+  border-radius: 9.2px;
+  width: 100%;
+  height: 100%;
+}
+
+.main_id,
+.main_car {
+  width: auto;
+  height: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.43;
+  margin-top: 2px;
+}
+
+.main_id span{
+  color: #383838;
+  font-weight: 700;
+  margin-left: 8px;
+}
+
+.main_point {
+  width: 2px;
+  height: 2px;
+  flex-grow: 0;
+  background-color: #999;
+  margin: 11px 6px;
+  
+}
+
+.main_car span {
+  color: #aaa
+}
+
+.main_time {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 42px;
+  height: 19px;
+  text-align: right;
+  color: #aaa;
+}
+
+/* .f_time {
+  margin-top: -4px;
+  margin-left: 79px;
+} */
+
+.main_time span {
+  font-size: 13px;
+}
+
+
+
+.main_tex_box {
+  width: 339px;
+  height: 102px;
+  display: flex;
+  flex-grow: 1;
+  /* border: 1px solid orange; */
+  margin-top: 16px;
+}
+
+.main_h_box {
+  width: 243px;
+  height: 102px;
+  overflow: hidden;
+  /* border: 1px solid green; */
+}
+
+.main_h_box2 {
+  width: 100%;
+}
+
+.main_h1 {
+  width: 100%;
+  min-width: 24px;
+  /* border: 1px solid blue; */
+  font-size: 16px;
+  line-height: 1.41;
+  letter-spacing: -1.25px;
+  text-align: left;
+  color: #000;
+  font-family: "맑은 고딕";
+  font-weight: 700;
+}
+
+.main_h3 {
+  width: 100%;
+  max-height: 60px;
+  margin-top: 10px;
+  /* border: 1px solid black; */
+  font-size: 14px;
+  line-height: 1.41;
+  letter-spacing: -1.25px;
+  color: #999;
+}
+
+.main_img2 {
+  width: 80px;
+  height: 80px;
+  margin-left: 16px;
+  overflow: hidden;
+}
+
+.main_img2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.main_choice {
+  width: 100%;
+  height: 28px;
+  margin-top: 11px;
+  /* border: 1px solid red; */
+  display: flex;
+  position: relative;
+}
+
+.main_smail,
+.main_like,
+.main_like2 {
+  min-width: 47px;
+  height: 28px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 4px 4px;
+  flex-grow: 1;
+}
+
+.main_like2 {
+  margin-left: 200px;
+}
+
+.main_smail span,
+.main_like span {
+  width: auto;
+  height: 28px;
+  /* border: 1px solid red; */
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+.smail_sp > span {
+  font-size: 12px;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+}
+
+.bnav {
+  width: 375px;
+  height: 54px;
+  display: flex;
+  flex-grow: 1;
+  background-color: #fff;
+}
+
+.bnav_box {
+  width: 75px;
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.bnav_box img {
+  margin-top: 6px;
+  margin-left: 25px;
+}
+
+.bnav_box1 img {
+  margin-left: 26px;
+}
+
+.bnav_span {
+  font-size: 10px;
+  text-align: center;
+  
+}
+
+
+
+
+
+
+
