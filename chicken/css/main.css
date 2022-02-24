@@ -1,0 +1,262 @@
+@charset "utf-8";
+
+
+@import url(./reset.css);
+@import url(./core.css);
+
+
+@font-face {
+  font-family: 'BinggraeSamanco-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/BinggraeSamanco-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
+* {
+  overflow-x: hidden
+}
+
+.page {
+  width: 100vw;
+  height: 55vw;
+  margin: 0 auto;
+  overflow: hidden;
+
+}
+
+.space {
+  width: 100%;
+  height: 86px;
+}
+
+/*IR class*/
+.ir {
+  display: block;
+  overflow: hidden;
+  text-indent: -1000em;
+  /*글자들여쓰기로 글자숨기기*/
+}
+
+/*숨김class*/
+.bld {
+  display: none;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  width: 100vw;
+}
+
+/* 메뉴박스 */
+header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 100vw;
+  height: 70px;
+  background-color: #f7f2dc;
+  z-index: 9999;
+  transform: translateX(-50%);
+  padding: 8px;
+  display: flex;
+  overflow: hidden;
+  /* border: 1px solid red; */
+}
+
+.logo {
+  position: relative;
+  width: 180px;
+  height: 50px;
+  margin-left: 7%;
+  margin-top: 10px;
+  /* border: 1px solid black; */
+  overflow: hidden;
+}
+
+.logo-img {
+  position: absolute;
+  left: 0;
+  width: 100px;
+  z-index: 10;
+}
+
+
+.logo-txt {
+  background-image: url(../images/bba.png);
+  width: 70px;
+  background-position: 0 10px;
+  margin-top: 5px;
+  margin-left: 80px;
+}
+
+.gnb {
+  width: 60vw;
+  margin-left: 8%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #328630;
+  /* border : 1px solid blue; */
+}
+
+.gnb li a {
+  font-size: 2.5vw;
+  font-weight: 800;
+  color: #415967;
+}
+
+.gnb li:hover {
+  transform: scale(1.2);
+  transition: all .3s ease-out;
+}
+
+.gnb li a:hover {
+  color: #328630;
+}
+
+
+
+
+
+
+/* 메인박스전체 크기설정 플렉스 */
+
+.main>ul {
+  display: flex;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  /* border: 1px solid red; */
+}
+
+.main>ul>li {
+  width: 100%;
+  flex: 1;
+  overflow: hidden;
+  transition: all .4s ease-out;
+  /* border: 1px solid blue; */
+}
+
+.main>ul>li:hover {
+  flex: 1.5;
+}
+
+/* 메인메뉴박스 백그라운드 */
+.main>ul>li:first-child {
+  background-color: #161824;
+  color: #fff;
+  font-family: 'BinggraeSamanco-Bold';
+}
+
+.main>ul>li:nth-child(2) {
+  background-color: #415967;
+  color: #fff;
+  font-family: 'BinggraeSamanco-Bold';
+}
+
+.main>ul>li:nth-child(3) {
+  background-color: #2d2e43;
+  color: #fff;
+  font-family: 'BinggraeSamanco-Bold';
+}
+
+
+
+
+/* 메인박스 설정 */
+.main-box {
+  position: relative;
+}
+
+/* 메인메뉴박스 */
+.main-menubox {
+  width: 100%;
+  /* border: 1px solid green; */
+  margin-top: 5%;
+}
+
+.main-menu {
+  font-size: 2.5vw;
+}
+
+.main-menu-txt {
+  font-size: 2vw;
+  opacity: 0;
+}
+
+.main>ul>li:hover .main-menu-txt {
+  opacity: 1;
+  transition: all .3s ease-out;
+}
+
+
+/* 메인이미지 박스 */
+.main-imgbox {
+  width: 80%;
+  /* border: 1px solid yellow; */
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.main>ul>li:hover .main-imgbox {
+  width: 90%;
+  transition: all .3s ease-out;
+}
+
+.mainImg {
+  width: 100%;
+}
+
+/* 메인 주문박스 */
+.main-selbox {
+  width: 100%;
+  height: 3vw;
+  min-height: 25px;
+  /* border: 1px solid orange; */
+  margin-top: 5%;
+}
+
+.main-sel {
+  width: 8vw;
+  height: 3vw;
+  min-width: 50px;
+  min-height: 25px;
+  border: 3px solid #fff;
+  border-radius: 30px;
+  background-color: transparent;
+  color: #fff;
+  font-family: 'BinggraeSamanco-Bold';
+  font-size: 2vw;
+  cursor: pointer;/*손가락모양*/
+}
+
+.main-sel:hover {
+  background-color: #fff;
+}
+
+.main-sel1:hover {
+  color: #161824;
+}
+
+
+
+
+.col1 {
+  background-color: #BFD7B5;
+}
+
+.col2 {
+  background-color: #E7EFC5;
+}
+
+.col3 {
+  background-color: #A3C4BC;
+}
