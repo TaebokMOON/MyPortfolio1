@@ -19,6 +19,7 @@
 }
 
 .page {
+  position: relative;
   width: 100vw;
   height: 55vw;
   margin: 0 auto;
@@ -114,7 +115,7 @@ header {
 
 .gnb li:hover {
   transform: scale(1.2);
-  transition: all .3s ease-out;
+  transition: all .5s ease-in-out;
 }
 
 .gnb li a:hover {
@@ -141,7 +142,7 @@ header {
   width: 100%;
   flex: 1;
   overflow: hidden;
-  transition: all .4s ease-out;
+  transition: all .5s ease-in-out;
   /* border: 1px solid blue; */
 }
 
@@ -194,7 +195,7 @@ header {
 
 .main>ul>li:hover .main-menu-txt {
   opacity: 1;
-  transition: all .3s ease-out;
+  transition: all .5s ease-in-out;
 }
 
 
@@ -208,7 +209,7 @@ header {
 
 .main>ul>li:hover .main-imgbox {
   width: 90%;
-  transition: all .3s ease-out;
+  transition: all .5s ease-in-out;
 }
 
 .mainImg {
@@ -249,14 +250,239 @@ header {
 
 
 
+/*********************** 서브 메뉴 페이지 ***********************/
+/* ********************************************************** */
+
+/* 서브 박스 */
+.sub {
+  position: relative;
+  width: 98%;
+  height: 70%;
+  margin: 0 auto;
+  margin-top: 5%;
+  overflow: hidden;
+  /* border: 1px solid red; */
+}
+
+.sub-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 100%;
+  transition: all .5s ease-in-out;
+  /* border: 1px solid blue; */
+  border-radius: 5%;
+}
+
+/* 서브 메뉴박스 */
+.sub-menubox {
+    width: 100%;
+    text-align: center;
+    color: #3e4635;
+    /* border: 1px solid green; */
+}
+
+.sub-tit {
+ font-size: 2.5vw;
+}
+
+.sub-txt {
+  font-size: 1.5vw;
+  opacity: 0;
+  
+}
+
+/* 서브 이미지 박스 */
+.sub-imgbox {
+  width: 100%;
+  /* border: 1px solid black; */
+  
+}
+
+.sub-img {
+  width: 100%;
+}
+
+
+/* 서브 셀 박스 */
+.sub-selbox {
+  width: 100%;
+  min-height: 30px;
+  text-align: center;
+  height: 7vw;
+  min-height: 25px;
+  color: #3e4635;
+  /* border: 1px solid orange; */
+}
+
+.sub-sel {
+  width: 8vw;
+  height: 3vw;
+  min-width: 50px;
+  min-height: 25px;
+  border: 3px solid #334635;
+  border-radius: 30px;
+  background-color: transparent;
+  color: #334635;
+  font-family: 'BinggraeSamanco-Bold';
+  font-size: 2vw;
+  cursor: pointer;/*손가락모양*/
+  text-align: center;
+  margin-top: 2%;
+}
+
+/* 호버시 바뀌는 것들 */
+
+.sub-box:hover {
+  background-color: #334635;
+}
+
+.sub-box:hover .sub-menubox {
+  color: #fff;
+}
+
+
+.sub-box:hover .sub-txt {
+  opacity: 1;
+}
+
+.sub-box:hover .sub-selbox {
+  color: #fff;
+}
+
+.sub-box:hover .sub-sel {
+  border: 3px solid #fff;
+}
+
+.sub-box:hover .sub-sel1 {
+  color: #fff;
+}
+
+.sub-box .sub-sel:hover {
+  color: #334635; 
+  background-color: #fff;
+}
+
+
+
+/* 위치 잡기 */
+
+/* 1번 가운데 숨어있음 */
+.sub-box:nth-child(1) {
+  top: 0;
+  transform: scale(.1);
+  opacity: 0;
+}
+
+/* 2번 맨 왼쪽 임 */
+.sub-box:nth-child(2) {
+  top: 0%;
+  left: -8%;
+  transform: scale(.4);
+  z-index: 2;
+}
+
+/* 3번 가운데 왼쪽 */
+.sub-box:nth-child(3) {
+  top: 0%;
+  left: 9%;
+  transform: scale(.7);
+  z-index: 4;
+}
+
+/* 4번 중앙 */
+.sub-box:nth-child(4) {
+  top: 0;
+  left: 35% ;
+  transform: scale(1);
+  z-index: 6;
+}
+
+/* 5번 가운데 오른쪽 */
+.sub-box:nth-child(5) {
+  top: 0;
+  left: 61% ;
+  transform: scale(.7);
+  z-index: 4;
+}
+
+/* 6번 가운데 오른쪽 */
+.sub-box:nth-child(6) {
+  top: 0;
+  left: 78% ;
+  transform: scale(.4);
+  z-index: 2;
+}
+
+/* 7번 가운데 오른쪽 */
+.sub-box:nth-child(7) {
+  top: 0;
+  left: 35% ;
+  transform: scale(.1);
+  opacity: 0;
+}
+
+
+
+
+/* 이동버튼 셋팅 */
+.abtn {
+  position: absolute;
+  top: 80%;
+  /* transform: translateY(-50%);*/
+  width: 25px;
+  height: 49px;
+  z-index: 2;
+}
+
+/*왼쪽버튼*/
+.lb {
+  left: 20%;
+  background: url(../images/btn_shop_bn_left.png) no-repeat;
+}
+
+/*오른쪽버튼*/
+.rb {
+  right: 20%;
+  background: url(../images/btn_shop_bn_right.png) no-repeat;
+
+}
+
+.abtn:hover {
+  background-position: 0 -49px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sub-tit {
+  font-size: 2vw;
+}
+
 .col1 {
-  background-color: #BFD7B5;
+  /* background-color: #BFD7B5; */
 }
 
 .col2 {
-  background-color: #E7EFC5;
+  /* background-color: #E7EFC5; */
+  height: 46vw;
 }
 
 .col3 {
   background-color: #A3C4BC;
+  height: 46vw;
 }
