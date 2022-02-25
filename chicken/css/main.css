@@ -119,7 +119,7 @@ header {
 }
 
 .gnb li a:hover {
-  color: #328630;
+  color: #C41347;
 }
 
 
@@ -131,7 +131,7 @@ header {
 
 .main>ul {
   display: flex;
-  width: 90%;
+  width: 80%;
   height: 100%;
   margin: 0 auto;
   text-align: center;
@@ -256,10 +256,10 @@ header {
 /* 서브 박스 */
 .sub {
   position: relative;
-  width: 98%;
-  height: 70%;
+  width: 80%;
+  height: 80%;
   margin: 0 auto;
-  margin-top: 5%;
+  margin-top: 8%;
   overflow: hidden;
   /* border: 1px solid red; */
 }
@@ -270,9 +270,9 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 30%;
-  height: 100%;
+  height: 95%;
   transition: all .5s ease-in-out;
-  /* border: 1px solid blue; */
+  border: 3px solid #C41347;
   border-radius: 5%;
 }
 
@@ -280,7 +280,8 @@ header {
 .sub-menubox {
     width: 100%;
     text-align: center;
-    color: #3e4635;
+    color: #C41347;
+    margin-top: 10%;
     /* border: 1px solid green; */
 }
 
@@ -291,12 +292,16 @@ header {
 .sub-txt {
   font-size: 1.5vw;
   opacity: 0;
-  
+}
+
+.sub-tit {
+  font-size: 2vw;
 }
 
 /* 서브 이미지 박스 */
 .sub-imgbox {
   width: 100%;
+  margin-top: 5%;
   /* border: 1px solid black; */
   
 }
@@ -313,7 +318,8 @@ header {
   text-align: center;
   height: 7vw;
   min-height: 25px;
-  color: #3e4635;
+  color: #C41347;
+  margin-top: 10%;
   /* border: 1px solid orange; */
 }
 
@@ -322,10 +328,10 @@ header {
   height: 3vw;
   min-width: 50px;
   min-height: 25px;
-  border: 3px solid #334635;
+  border: 3px solid #C41347;
   border-radius: 30px;
   background-color: transparent;
-  color: #334635;
+  color: #C41347;
   font-family: 'BinggraeSamanco-Bold';
   font-size: 2vw;
   cursor: pointer;/*손가락모양*/
@@ -336,7 +342,7 @@ header {
 /* 호버시 바뀌는 것들 */
 
 .sub-box:hover {
-  background-color: #334635;
+  background-color: #C41347;
 }
 
 .sub-box:hover .sub-menubox {
@@ -361,7 +367,7 @@ header {
 }
 
 .sub-box .sub-sel:hover {
-  color: #334635; 
+  color: #C41347; 
   background-color: #fff;
 }
 
@@ -371,7 +377,7 @@ header {
 
 /* 1번 가운데 숨어있음 */
 .sub-box:nth-child(1) {
-  top: 0;
+  top: -10%;
   transform: scale(.1);
   opacity: 0;
 }
@@ -394,7 +400,7 @@ header {
 
 /* 4번 중앙 */
 .sub-box:nth-child(4) {
-  top: 0;
+  top: 0%;
   left: 35% ;
   transform: scale(1);
   z-index: 6;
@@ -430,7 +436,7 @@ header {
 /* 이동버튼 셋팅 */
 .abtn {
   position: absolute;
-  top: 80%;
+  top: 90%;
   /* transform: translateY(-50%);*/
   width: 25px;
   height: 49px;
@@ -469,9 +475,7 @@ header {
 
 
 
-.sub-tit {
-  font-size: 2vw;
-}
+
 
 .col1 {
   /* background-color: #BFD7B5; */
@@ -479,7 +483,7 @@ header {
 
 .col2 {
   /* background-color: #E7EFC5; */
-  height: 46vw;
+  height: 50.4vw;
 }
 
 .col3 {
