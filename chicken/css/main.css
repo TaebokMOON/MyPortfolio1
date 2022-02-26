@@ -103,14 +103,13 @@ header {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  color: #328630;
   /* border : 1px solid blue; */
 }
 
 .gnb li a {
   font-size: 2.5vw;
   font-weight: 800;
-  color: #415967;
+  color: #1F3D7C;
 }
 
 .gnb li:hover {
@@ -152,19 +151,19 @@ header {
 
 /* 메인메뉴박스 백그라운드 */
 .main>ul>li:first-child {
-  background-color: #161824;
+  background-color: #29176D;
   color: #fff;
   font-family: 'BinggraeSamanco-Bold';
 }
 
 .main>ul>li:nth-child(2) {
-  background-color: #415967;
+  background-color: #BE1931;
   color: #fff;
   font-family: 'BinggraeSamanco-Bold';
 }
 
 .main>ul>li:nth-child(3) {
-  background-color: #2d2e43;
+  background-color: #1F3D7C;
   color: #fff;
   font-family: 'BinggraeSamanco-Bold';
 }
@@ -244,7 +243,13 @@ header {
 }
 
 .main-sel1:hover {
-  color: #161824;
+  color: #29176D;
+}
+.main-sel2:hover {
+  color: #C32B41;
+}
+.main-sel3:hover {
+  color: #1F3D7C;
 }
 
 
@@ -274,6 +279,7 @@ header {
   transition: all .5s ease-in-out;
   border: 3px solid #C41347;
   border-radius: 5%;
+  overflow: hidden;
 }
 
 /* 서브 메뉴박스 */
@@ -314,21 +320,22 @@ header {
 /* 서브 셀 박스 */
 .sub-selbox {
   width: 100%;
-  min-height: 30px;
   text-align: center;
   height: 7vw;
   min-height: 25px;
   color: #C41347;
   margin-top: 10%;
+  padding-bottom: 20%;
+  overflow: hidden;
   /* border: 1px solid orange; */
+
 }
 
 .sub-sel {
   width: 8vw;
-  height: 3vw;
+  height: 4vw;
   min-width: 50px;
   min-height: 25px;
-  border: 3px solid #C41347;
   border-radius: 30px;
   background-color: transparent;
   color: #C41347;
@@ -337,6 +344,7 @@ header {
   cursor: pointer;/*손가락모양*/
   text-align: center;
   margin-top: 2%;
+  border: 3px solid #C41347;
 }
 
 /* 호버시 바뀌는 것들 */
@@ -436,28 +444,45 @@ header {
 /* 이동버튼 셋팅 */
 .abtn {
   position: absolute;
-  top: 90%;
+  top: 87%;
   /* transform: translateY(-50%);*/
-  width: 25px;
-  height: 49px;
+  width: 4vw;
+  height: 3vw;
+  min-width: 25px;
+  min-height: 20px;
   z-index: 2;
+  /* border: 1px solid red; */
 }
 
 /*왼쪽버튼*/
 .lb {
   left: 20%;
-  background: url(../images/btn_shop_bn_left.png) no-repeat;
+  background: url(../images/arrow.png) no-repeat;
+  background-size: cover;
+  transform: scaleX(-1);
+
+
 }
 
 /*오른쪽버튼*/
 .rb {
   right: 20%;
-  background: url(../images/btn_shop_bn_right.png) no-repeat;
+  background: url(../images/arrow.png) no-repeat;
+  background-size: cover;
+}
+
+.lb:hover {
+  background: url(../images/arrow1.png) no-repeat;
+  background-size: cover;
+  transform: scaleX(1);
 
 }
 
-.abtn:hover {
-  background-position: 0 -49px;
+.rb:hover {
+  background: url(../images/arrow1.png) no-repeat;
+  background-size: cover;
+  transform: scaleX(-1);
+
 }
 
 
@@ -473,6 +498,91 @@ header {
 
 
 
+/* 오른쪽픽시드 박스들 */
+
+.fixced {
+  position: fixed;
+  top: 150px;
+  right: 1vw;
+  width: 6.5vw;
+  height: 40vw;
+  overflow: hidden;
+  /* border: 3px solid black; */
+}
+
+.fix {
+  width: 5vw;
+  height: 5vw;
+  min-width: 3vw;
+  overflow: hidden;
+  transition: all .5s ease-in-out;
+  border: 3px solid #29176D;
+}
+
+.fixced ol li+li {
+  margin-top: 0.3vw;
+}
+
+.fix:hover {
+  height: 7.5vw;
+}
+
+.fix-box {
+  width: 5vw;
+  height: 5vw; 
+  overflow: hidden;
+}
+
+.fix-img {
+  width: 100%;
+}
+
+.loc-img,
+.que-img {
+  width: 90%;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.fix-txtbox {
+  width: 100%;
+  height: 2vw;
+  text-align: center;
+  overflow: hidden;
+  /* border: 1px solid green; */
+}
+
+/* 픽스박스 첫번쨰 세부셋팅 */
+.fix-txt {
+  font-size: 1.5vw;
+  color: #29176D;
+}
+
+/* 픽스박스 두번쨰 세부셋팅 */
+.que-box {
+  border: 3px solid #BE1931;
+}
+
+.tel-txt {
+  color: #BE1931;
+}
+
+/* 픽스박스 세번쨰 세부셋팅 */
+.fou-box {
+  border: 3px solid #1F3D7C;
+}
+
+.fou-txt {
+  color: #1F3D7C;
+}
+
+.loc-box {
+  border: 3px solid #722981;
+}
+
+.loc-txt {
+  color: #722981;
+}
 
 
 
