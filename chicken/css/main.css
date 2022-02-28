@@ -235,7 +235,8 @@ header {
   color: #fff;
   font-family: 'BinggraeSamanco-Bold';
   font-size: 2vw;
-  cursor: pointer;/*손가락모양*/
+  cursor: pointer;
+  /*손가락모양*/
 }
 
 .main-sel:hover {
@@ -245,9 +246,11 @@ header {
 .main-sel1:hover {
   color: #29176D;
 }
+
 .main-sel2:hover {
   color: #C32B41;
 }
+
 .main-sel3:hover {
   color: #1F3D7C;
 }
@@ -280,19 +283,20 @@ header {
   border: 3px solid #C41347;
   border-radius: 5%;
   overflow: hidden;
+  background-color: #fff;
 }
 
 /* 서브 메뉴박스 */
 .sub-menubox {
-    width: 100%;
-    text-align: center;
-    color: #C41347;
-    margin-top: 10%;
-    /* border: 1px solid green; */
+  width: 100%;
+  text-align: center;
+  color: #C41347;
+  margin-top: 10%;
+  /* border: 1px solid green; */
 }
 
 .sub-tit {
- font-size: 2.5vw;
+  font-size: 2.5vw;
 }
 
 .sub-txt {
@@ -309,7 +313,7 @@ header {
   width: 100%;
   margin-top: 5%;
   /* border: 1px solid black; */
-  
+
 }
 
 .sub-img {
@@ -341,7 +345,8 @@ header {
   color: #C41347;
   font-family: 'BinggraeSamanco-Bold';
   font-size: 2vw;
-  cursor: pointer;/*손가락모양*/
+  cursor: pointer;
+  /*손가락모양*/
   text-align: center;
   margin-top: 2%;
   border: 3px solid #C41347;
@@ -367,7 +372,7 @@ header {
 }
 
 .sub-box:hover .sub-sel {
-  border: 3px solid #fff;
+  border: 0.2vw solid #fff;
 }
 
 .sub-box:hover .sub-sel1 {
@@ -375,7 +380,7 @@ header {
 }
 
 .sub-box .sub-sel:hover {
-  color: #C41347; 
+  color: #C41347;
   background-color: #fff;
 }
 
@@ -409,7 +414,7 @@ header {
 /* 4번 중앙 */
 .sub-box:nth-child(4) {
   top: 0%;
-  left: 35% ;
+  left: 35%;
   transform: scale(1);
   z-index: 6;
 }
@@ -417,7 +422,7 @@ header {
 /* 5번 가운데 오른쪽 */
 .sub-box:nth-child(5) {
   top: 0;
-  left: 61% ;
+  left: 61%;
   transform: scale(.7);
   z-index: 4;
 }
@@ -425,7 +430,7 @@ header {
 /* 6번 가운데 오른쪽 */
 .sub-box:nth-child(6) {
   top: 0;
-  left: 78% ;
+  left: 78%;
   transform: scale(.4);
   z-index: 2;
 }
@@ -433,7 +438,7 @@ header {
 /* 7번 가운데 오른쪽 */
 .sub-box:nth-child(7) {
   top: 0;
-  left: 35% ;
+  left: 35%;
   transform: scale(.1);
   opacity: 0;
 }
@@ -462,6 +467,7 @@ header {
   transform: scaleX(-1);
 
 
+
 }
 
 /*오른쪽버튼*/
@@ -487,8 +493,165 @@ header {
 
 
 
+/******
+
+***************** 창업 페이지 ***************************/
+
+.founded {
+  width: 80%;
+  height: 100%;
+  overflow: hidden;
+  /* border: 1px solid red; */
+}
+
+.founded-box {
+  width: 100%;
+  height: 70%;
+  margin-top: 5vw;
+  overflow: hidden;
+  /* border: 1px solid red; */
+}
+
+.icon-box {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.icon {
+  width: 22.5%;
+  height: 80%;
+  margin-top: 2%;
+  transition: all .4s ease-in-out;
+  /* border: 1px solid green; */
+}
+
+.icon:first-child {
+  margin-left: 2%;
+}
+
+.fou-imgbox {
+  width: 15vw;
+  height: 15vw;
+  margin: 0 auto;
+  margin-top: 3vw;
+  overflow: hidden;
+  text-align: center;
+  /* border: 1px solid orange; */
+}
+
+.founded-img {
+  width: 80%;
+}
+
+.icon+.icon {
+  margin-left: 2%;
+}
+
+.fou-txtbox {
+  width: 100%;
+  height: 5vw;
+  text-align: center;
+  /* border: 1px solid orange; */
+}
+
+.founded-txt {
+  font-size: 2vw;
+  color: #018479;
+}
+
+.founded-txt1 {
+  color: #224C70;
+}
+
+.founded-txt2 {
+  color: #000000;
+}
+
+.founded-txt3 {
+  color: #26ABE2;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
 
 
+/* 창업관련 박스 */
+
+.fou-search-box {
+  width: 98vw;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+
+.fou-searchbox {
+  position: relative;
+  width: 49%;
+  height: 10vw;
+  background-color: #BE1931;
+  color: #fff;
+}
+
+.fou-tel {
+  float: left;
+  width: 14vw;
+  font-size: 2vw;
+  margin-left: 8vw;
+  margin-top: 1vw;
+  /* border: 1px solid #fff; */
+}
+
+.fou-tel2 {
+  display: block;
+  font-size: 4vw;
+}
+
+
+.fou-time {
+  float: left;
+  width: 10vw;
+  font-size: 1.5vw;
+  margin-left: 1.5vw;
+  margin-top: 3.8vw;
+  padding-left: 1.5vw;
+  margin-right: 2vw;
+  border-left: 1px solid #fff;
+}
+
+.fou-time1 {
+  white-space : nowrap;
+}
+.fou-time2 {
+  white-space : nowrap;
+}
+
+
+.fou-bun {
+  width: 8vw;
+  height: 3vw;
+  font-size: 2vw;
+  border: 3px solid #fff;
+  border-radius: 30px;
+  background-color: transparent;
+  color: #fff;
+  font-family: 'BinggraeSamanco-Bold';
+  cursor: pointer;
+  text-align: center;
+  padding-top: .7vw;
+  margin-top: 3.4vw;
+  border: 0.2vw solid #fff;
+  white-space : nowrap;
+}
+
+.fou-bun1 {
+  text-align: center;
+}
+
+.fou-bun:hover {
+  background: #fff;
+  color: #BE1931;
+}
 
 
 
@@ -529,7 +692,7 @@ header {
 
 .fix-box {
   width: 5vw;
-  height: 5vw; 
+  height: 5vw;
   overflow: hidden;
 }
 
@@ -589,14 +752,15 @@ header {
 
 .col1 {
   /* background-color: #BFD7B5; */
+  height: 60vw;
 }
 
 .col2 {
   /* background-color: #E7EFC5; */
-  height: 50.4vw;
+  height: 51vw;
 }
 
 .col3 {
-  background-color: #A3C4BC;
-  height: 46vw;
+  /* background-color: #A3C4BC; */
+  height: 34vw;
 }
