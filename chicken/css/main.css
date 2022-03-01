@@ -118,7 +118,7 @@ header {
 }
 
 .gnb li a:hover {
-  color: #C41347;
+  color: #BE1931;
 }
 
 
@@ -280,7 +280,7 @@ header {
   width: 30%;
   height: 95%;
   transition: all .5s ease-in-out;
-  border: 0.2vw solid #C41347;
+  border: 0.2vw solid #BE1931;
   border-radius: 5%;
   overflow: hidden;
   background-color: #fff;
@@ -290,7 +290,7 @@ header {
 .sub-menubox {
   width: 100%;
   text-align: center;
-  color: #C41347;
+  color: #BE1931;
   margin-top: 10%;
   /* border: 1px solid green; */
 }
@@ -327,7 +327,7 @@ header {
   text-align: center;
   height: 7vw;
   min-height: 25px;
-  color: #C41347;
+  color: #BE1931;
   margin-top: 10%;
   padding-bottom: 20%;
   overflow: hidden;
@@ -342,20 +342,20 @@ header {
   min-height: 25px;
   border-radius: 30px;
   background-color: transparent;
-  color: #C41347;
+  color: #BE1931;
   font-family: 'BinggraeSamanco-Bold';
   font-size: 2vw;
   cursor: pointer;
   /*손가락모양*/
   text-align: center;
   margin-top: 2%;
-  border: 0.2vw solid #C41347;
+  border: 0.2vw solid #BE1931;
 }
 
 /* 호버시 바뀌는 것들 */
 
 .sub-box:hover {
-  background-color: #C41347;
+  background-color: #BE1931;
 }
 
 .sub-box:hover .sub-menubox {
@@ -380,7 +380,7 @@ header {
 }
 
 .sub-box .sub-sel:hover {
-  color: #C41347;
+  color: #BE1931;
   background-color: #fff;
 }
 
@@ -827,7 +827,7 @@ footer {
   width: 85%;
   display: flex;
   font-size: 1.5vw;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   padding: 1%;
   margin-bottom: 1%;
 }
@@ -848,7 +848,7 @@ footer {
 .sns-box {
   width: 10vw;
   display: flex;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   font-size: 1.5vw;
 }
 
@@ -892,9 +892,9 @@ footer {
 
 .footlogo {
   position: absolute;
-  top: 30%;
+  top: 3vw;
   left: 12%;
-  width: 10vw;
+  width: 13vw;
   height: 4vw;
   margin-top: 10px;
   overflow: hidden;
@@ -904,12 +904,12 @@ footer {
 .footlogo-img {
   position: absolute;
   left: 10%;
-  width: 7vw;
+  width: 55%;
   z-index: 10;
 }
 
 .foot-box {
-  width: 50vw;
+  width: 45%;
   margin: 0 auto;
   /* border: 1px solid green; */
 }
@@ -919,7 +919,7 @@ footer {
   width: 4.5vw;
   background-position: 0 10px;
   margin-top: 6%;
-  margin-left: 55%;
+  margin-left: 48%;
 }
 
 .foot-txt {
