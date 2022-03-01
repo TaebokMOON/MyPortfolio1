@@ -229,7 +229,7 @@ header {
   height: 3vw;
   min-width: 50px;
   min-height: 25px;
-  border: 3px solid #fff;
+  border: 0.2vw solid #fff;
   border-radius: 30px;
   background-color: transparent;
   color: #fff;
@@ -280,7 +280,7 @@ header {
   width: 30%;
   height: 95%;
   transition: all .5s ease-in-out;
-  border: 3px solid #C41347;
+  border: 0.2vw solid #C41347;
   border-radius: 5%;
   overflow: hidden;
   background-color: #fff;
@@ -349,7 +349,7 @@ header {
   /*손가락모양*/
   text-align: center;
   margin-top: 2%;
-  border: 3px solid #C41347;
+  border: 0.2vw solid #C41347;
 }
 
 /* 호버시 바뀌는 것들 */
@@ -497,6 +497,12 @@ header {
 
 ***************** 창업 페이지 ***************************/
 
+.box {
+  width: 100vw;
+}
+
+
+
 .founded {
   width: 80%;
   height: 100%;
@@ -580,14 +586,16 @@ header {
 /* 창업관련 박스 */
 
 .fou-search-box {
-  width: 98vw;
-  border: 1px solid red;
+  width: 100vw;
+  /* border: 1px solid red; */
   margin: 0 auto;
+  display: flex;
+  flex-direction: row;
 }
 
 .fou-searchbox {
   position: relative;
-  width: 49%;
+  width: 100%;
   height: 10vw;
   background-color: #BE1931;
   color: #fff;
@@ -616,14 +624,14 @@ header {
   margin-top: 3.8vw;
   padding-left: 1.5vw;
   margin-right: 2vw;
-  border-left: 1px solid #fff;
 }
 
 .fou-time1 {
-  white-space : nowrap;
+  white-space: nowrap;
 }
+
 .fou-time2 {
-  white-space : nowrap;
+  white-space: nowrap;
 }
 
 
@@ -631,7 +639,7 @@ header {
   width: 8vw;
   height: 3vw;
   font-size: 2vw;
-  border: 3px solid #fff;
+  border: 0.2vw solid #fff;
   border-radius: 30px;
   background-color: transparent;
   color: #fff;
@@ -641,7 +649,7 @@ header {
   padding-top: .7vw;
   margin-top: 3.4vw;
   border: 0.2vw solid #fff;
-  white-space : nowrap;
+  white-space: nowrap;
 }
 
 .fou-bun1 {
@@ -654,8 +662,283 @@ header {
 }
 
 
+/* 빠른 상담 박스 */
 
 
+
+
+
+.fou-search-box1 {
+  position: relative;
+  width: 99%;
+  background-color: #281F1D;
+}
+
+.search-txt-box {
+  margin-top: 1vw;
+  margin-left: 3.5vw;
+  width: 25%;
+}
+
+.search-txt {
+  font-size: 2vw;
+  color: #fff;
+}
+
+.search-ul {
+  width: 80%;
+  display: inline-block;
+  display: flex;
+  padding: 1%;
+  margin-left: 3.5vw;
+  padding: 1% 0;
+  /* border: 1px solid #fff; */
+  margin-top: -1%;
+}
+
+.name-box {
+  width: 25%;
+  margin-top: 2%;
+}
+
+.name {
+  width: 100%;
+  height: 70%;
+  font-size: 1.5vw;
+}
+
+.number-box {
+  width: 40%;
+  overflow: hidden;
+  margin-left: 3%;
+  margin-top: 2%;
+}
+
+.number {
+  width: 100%;
+  height: 70%;
+  font-size: 1.5vw;
+}
+
+.Check-box {
+  margin-left: 5%;
+  padding: 0;
+  margin-top: -1.5%;
+}
+
+.sub-sel2 {
+  border: 0.2vw solid #fff;
+  color: #fff;
+}
+
+.sub-sel2:hover {
+  background-color: #fff;
+  color: #281F1D;
+}
+
+
+
+
+/*  전국 매장찾기  */
+
+.store-box {
+  width: 100%;
+  background-color: #224C70;
+  text-align: center;
+  padding: 2%;
+}
+
+.store-txt-box {
+  font-size: 3vw;
+  color: #fff;
+}
+
+.store-txt-box1 {
+  font-size: 1.5vw;
+  color: #fff;
+  margin-top: 0.3%;
+}
+
+.store-txt {
+  color: #f3324f;
+}
+
+/*  전국매장 선택박스 */
+
+.city-box {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 2vw;
+  margin-top: 1%;
+  /* border: 1px solid #fff; */
+}
+
+.city {
+  width: 18%;
+  box-sizing: border-box;
+  font-size: 2vw;
+  background-color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 0 3%;
+  font-family: 'BinggraeSamanco-Bold';
+}
+
+.city1 {
+  width: 25%;
+  box-sizing: border-box;
+  font-size: 2vw;
+  background-color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 0 3%;
+  font-family: 'BinggraeSamanco-Bold';
+}
+
+.city-txt {
+  width: 40%;
+  box-sizing: border-box;
+  font-size: 2vw;
+  background-color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 0 3%;
+  font-family: 'BinggraeSamanco-Bold';
+}
+
+
+/* footer 영역 */
+footer {
+  width: 100vw;
+  margin: 0 auto;
+  background-color: #F7F2DC;
+}
+
+.footer {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1%;
+  box-sizing: border-box;
+  
+}
+
+.footer-menubox {
+  width: 85%;
+  display: flex;
+  font-size: 1.5vw;
+  border: 1px solid green;
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+.footer-menubox li+li {
+  margin-left: 3%;
+  border-left: 0.2vw solid rgb(110, 110, 110);
+}
+
+.munu-txt {
+  padding: 0 3%;
+}
+
+.footer-menubox li a:hover {
+  color: #BE1931;
+}
+
+.sns-box {
+  width: 10vw;
+  display: flex;
+  border: 1px solid blue;
+  font-size: 1.5vw;
+}
+
+.sns-boximg {
+  width: 100%;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+
+}
+
+.sns-boximg:hover {
+  transform: scale(1.1);
+}
+
+
+.sns-box li+li {
+  margin-left: 5%;
+}
+
+
+/* 회사 설명박스 */
+
+.company {
+  position: relative;
+  width: 100vw;
+  height: 8vw;
+  min-height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2%;
+  overflow: hidden;
+  background-color: #F7F2DC;
+  /* border: 1px solid red; */
+  border-top: 0.2vw solid rgb(110, 110, 110);
+}
+
+.foot-logobox {
+  width: 80vw;
+}
+
+
+.footlogo {
+  position: absolute;
+  top: 30%;
+  left: 12%;
+  width: 10vw;
+  height: 4vw;
+  margin-top: 10px;
+  overflow: hidden;
+  /* border: 1px solid black; */
+}
+
+.footlogo-img {
+  position: absolute;
+  left: 10%;
+  width: 7vw;
+  z-index: 10;
+}
+
+.foot-box {
+  width: 50vw;
+  margin: 0 auto;
+  /* border: 1px solid green; */
+}
+
+.footlogo-txt {
+  background-image: url(../images/bba.png);
+  width: 4.5vw;
+  background-position: 0 10px;
+  margin-top: 6%;
+  margin-left: 55%;
+}
+
+.foot-txt {
+  display: inline-block;
+  font-size: 1.9vw;
+  margin-top: 1%;
+  /* border: 1px solid red; */
+}
+
+.foot-txt1 {
+  margin-top: 0;
+}
+
+.foot-txt-col {
+  color: #224C70;
+}
+.foot-txt-co2 {
+  color: rgb(110, 110, 110);
+}
 
 
 
